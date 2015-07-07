@@ -1,0 +1,616 @@
+
+$gutter = 10
+
+$containerWidth = 790
+$colWidthRaw = ($containerWidth/4)
+$colWidth = ($colWidthRaw) - ($gutter * 1)
+
+$smcontainerWidth = 701
+$smcolWidthRaw = ($smcontainerWidth/4)
+$smcolWidth = ($smcolWidthRaw) - ($gutter * 1)
+
+$lrgcontainerWidth = 1034
+$lrgcolWidthRaw = ($lrgcontainerWidth/4)
+$lrgcolWidth = ($lrgcolWidthRaw) - ($gutter * 1)
+
+$smphonecontainerWidth = 320
+$smphonecolWidthRaw = ($smphonecontainerWidth/2)
+$smphonecolWidth = ($smphonecolWidthRaw) - ($gutter * 2)
+
+$medphonecontainerWidth = 372
+$medphonecolWidthRaw = ($medphonecontainerWidth/2)
+$medphonecolWidth = ($medphonecolWidthRaw) - ($gutter * 2)
+
+$lrgphonecontainerWidth = 405
+$lrgphonecolWidthRaw = ($lrgphonecontainerWidth/2)
+$lrgphonecolWidth = ($lrgphonecolWidthRaw) - ($gutter * 2)
+
+section#connect
+    width: 100%
+    background: url('../images/Phase2/white-stripe-thin-bg.png') repeat
+
+    #connect-content
+        width: 90%
+        max-width: 1024px
+        height: 100%
+        margin: 0 auto
+        overflow: hidden
+        padding-bottom: 100px
+        background-image: url("/burn/images/Phase2/connect-loading-icon.png")
+        background-repeat: no-repeat
+        background-position: center bottom
+
+        #connect-headline
+            width: 100%
+            padding: 40px 0 0
+            margin-bottom: 20px
+            border-bottom: 1px solid gray
+            text-align: center
+            position: relative
+
+            .logo
+                position: absolute
+                left: 0
+                top: 40px
+
+                img
+                    height: 60px
+
+            p
+                font-family: BentonSansComp-Bold
+                font-size: 31px
+                color: #484848
+                text-transform: none
+                width: 80%
+                margin: 0 auto
+
+                &.sub-text
+                    font-family: BentonSansComp
+                    font-size: 18px
+                    margin: 15px auto 30px
+                    max-width: 300px
+
+                    em
+                        font-family: BentonSansComp-Bold
+                        color: orange
+                        text-transform: uppercase
+
+                &.mobile
+                    display: none
+
+            .social
+                position: absolute
+                right: 0
+                top: 40px
+
+                p
+                    font-family: BentonSansComp
+                    font-size: 18px
+                    color: darkgray
+                    text-transform: uppercase
+
+                em
+                    color: orange
+
+                ol#social
+                    margin: 10px 0 0 12px
+
+                    li
+                        display: inline-block
+                        margin: 0 5px
+                        position: relative
+
+                        img
+                            width: 24px
+                            transition: opacity .35s ease-in-out
+
+                            &.inactive
+                                opacity: 1
+
+                            &.active
+                                opacity: 0
+                                position: absolute
+                                left: 0px
+
+                        &:hover
+                            img.inactive
+                                opacity: 0
+
+                            img.active
+                                opacity: 1
+
+        #connect-masonry-wrapper
+            height: 90%
+            width: 100%
+            max-width: 1024px
+            margin: 0 auto
+
+        #connect-masonry
+            margin: 0 auto
+
+            @media(min-width:300px)
+                width: ($smphonecontainerWidth - ($gutter*2))px
+
+            @media (min-width: 374px)
+                width: ($medphonecontainerWidth - ($gutter*2))px
+
+            @media (min-width: 400px)
+                width: ($lrgphonecontainerWidth - ($gutter*2))px
+
+            @media(min-width:681px)
+                width: ($smcontainerWidth)px
+
+            @media(min-width:770px)
+                width: ($containerWidth)px
+
+            @media(min-width:1025px)
+                width: ($lrgcontainerWidth)px
+
+        img#connect-load-icon
+            width: 52px
+            position: absolute
+            left: 0
+            right: 0
+            bottom: 10px
+            margin: 0 auto
+
+    @media(max-width:680px)
+        #connect-content
+            width: 100%
+
+            #connect-headline
+                border: none
+
+                .logo
+                    position: static
+
+                    img
+                        height: 90px
+                        margin-bottom: 30px
+
+                p.mobile
+                    display: block
+                    text-transform: uppercase
+                    font-family: BentonSansExtraComp-Bold
+                    font-size: 30px
+
+                p.sub-text
+                    width: 90%
+                    margin: 20px auto 30px
+                    font-size: 17px
+
+                .social
+                    position: static
+                    margin-bottom: 30px
+
+                    ol#social li img
+                        width: 40px
+
+            #connect-masonry
+                margin: 0 auto
+
+                @media(max-width: 680px)
+                    .item
+                        // right: 0px
+
+.shuffle_sizer
+    opacity:0
+    position: absolute
+    margin:($gutter)px ($gutter)px
+    height:1px
+
+    @media(max-width:320px)
+        width: ($smphonecolWidth)px
+
+    @media (min-width: 374px)
+        width: ($medphonecolWidth)px
+
+    @media (min-width: 400px)
+        width: ($lrgphonecolWidth)px
+
+    @media (min-width: 681px)
+        width: ($smcolWidth)px
+
+    @media (min-width: 770px)
+        width: ($colWidth)px
+
+    @media (min-width: 1025px)
+        width: ($lrgcolWidth)px
+
+.square-post
+    position: relative
+    // padding:10px
+    box-sizing:border-box
+    overflow: hidden
+    background-size: cover !important
+    background-repeat: none
+    border: 0px solid orange
+    transition: border .35s ease-in-out .35s
+    margin:(0)px (0)px
+
+    img
+        width: 100%
+
+    .hover-overlay
+        height: 110%
+        width: 100%
+        background: rgba(0,0,0,0.75)
+        opacity: 0
+        z-index: -5
+        pointer-events: none
+        box-sizing: content-box
+        padding: 10px
+        margin: -10px
+        display: table
+        transition: opacity .35s ease-in-out .35s
+
+        p.caption
+            font-family: BentonSansComp
+            color: white
+            font-size: 18px
+            line-height: 21px
+            width: 100%
+            margin-left: 0%
+            padding: 0 10%
+            height: 100%
+            margin: 0 auto
+            display: table-cell
+            vertical-align: middle
+            text-align: center
+            opacity: 0
+            transition: opacity .35s ease-in-out 0s
+            // transition-delay: 0s
+
+        &::after
+            opacity: 1
+            position: absolute
+            right: 28px
+            bottom: 28px
+            height: 18px
+            width: 10px
+            content: "\f045"
+            font-family: FontAwesome
+            font-size: 26px
+            color: white
+            opacity: 1
+            transition: opacity .35s ease-in-out
+
+    &:hover, &.touch-hover
+        border: 5px solid orange
+        transition: border .35s ease-in-out 0s
+
+        .hover-overlay
+            opacity: 1
+            z-index: 50000
+            pointer-events: auto
+
+
+            p.caption
+                opacity: 1
+                // transition-delay: .35s
+                transition: opacity .35s ease-in-out .35s
+
+
+
+    &.facebook::before, &.twitter::before, &.instagram::before
+        position: absolute
+        left: 28px
+        bottom: 32px
+        height: 18px
+        width: 10px
+        font-family: FontAwesome
+        font-size: 26px
+        z-index: 100
+        color: white
+        content: "\f09a"
+
+    &.facebook::before
+        content: "\f09a"
+
+    &.instagram::before
+        content: "\f16d"
+
+    &.twitter::before
+        content: "\f099"
+
+    &.small
+        float: left
+        margin-bottom: 0
+        background-position: center center
+
+        &.facebook::before, &.twitter::before, &.instagram::before
+            left: 15px
+            bottom: 20px
+
+        .hover-overlay p.caption
+            width: 100%
+            margin-left: 0%
+            height: 100%
+            font-size: 14px
+
+        .hover-overlay::after
+            right: 28px
+            bottom: 19px
+
+    @media(min-width:300px)
+        width: (($smphonecolWidth*2) + ($gutter*2))px
+        height: ((($smphonecolWidth)*2) + ($gutter*2))px
+
+        &.small
+            width: ($smphonecolWidth + ($gutter/2))px
+            height: ($smphonecolWidth + ($gutter/2))px
+
+    @media (min-width: 374px)
+        width: (($medphonecolWidth*2) + ($gutter*2))px
+        height: ((($medphonecolWidth)*2) + ($gutter*2))px
+
+        &.small
+            width: ($medphonecolWidth) + ($gutter/2)px
+            height: ($medphonecolWidth + ($gutter/2))px
+
+    @media (min-width: 400px)
+        width: (($lrgphonecolWidth*2) + ($gutter*2))px
+        height: ((($lrgphonecolWidth)*2) + ($gutter*2))px
+
+        &.small
+            width: ($lrgphonecolWidth + ($gutter/2))px
+            height: ($lrgphonecolWidth + ($gutter/2))px
+
+    @media(min-width:681px)
+        width: ($smcolWidth*2 + ($gutter))px
+        height: (($smcolWidth)*2 + ($gutter))px
+
+        &.small
+            width: ($smcolWidth)px
+            height: ($smcolWidth)px
+
+    @media(min-width:770px)
+        width: ($colWidth*2 + ($gutter))px
+        height: (($colWidth)*2 + ($gutter))px
+
+        &.small
+            width: ($colWidth)px
+            height: ($colWidth)px
+
+    @media(min-width:1025px)
+        width: (($lrgcolWidth*2 + $gutter))px
+        height: ((($lrgcolWidth)*2 + $gutter))px
+
+        &.small
+            width: ($lrgcolWidth)px
+            height: ($lrgcolWidth)px
+
+.text-post
+    width: ($colWidth*2)px
+    height: ($colWidth)px
+    float: left
+    padding:25px 10px
+    box-sizing:border-box
+    overflow:hidden
+    // margin:($gutter)px (0)px
+
+    .post-control
+        .feature
+            display:none
+
+    .img
+        width: 14%
+        height: 14%
+        float: left
+
+        img
+            width: 100%
+            height: auto
+            border-radius: 50px
+
+    .quote
+        max-width: 81%
+        height: 75px
+        float: left
+        font-family: BentonSansComp
+        font-size: 20px
+        line-height: 25px
+        color: black
+        position: relative
+        padding-left: 5%
+        
+        @media(max-width:780px)
+            font-size: 17px
+            line-height: 23px
+
+        .post-body
+            display:inline-block
+            height:75px
+            width:100%
+
+        em
+            font-family: BentonSansCond-Bold
+            font-size: 36px
+            line-height: 30px
+            margin: 0 5px
+            color: darkgray
+            display:inline
+
+            &.open-quote
+                position: absolute
+                left: -4px
+                top: 4px
+
+            &.close-quote
+                position: relative
+                left: 0px
+                top: 7px
+                line-height: 19px
+
+    .signature
+        position: relative
+        top: 10px
+        left: 19%
+        clear: left
+        display: block
+
+        .username
+            font-family: BentonSansCond-Bold
+            font-size: 16px
+            line-height: 18px
+            color: orange
+            text-transform: uppercase
+
+        .date
+            font-family: BentonSansCond
+            font-size: 16px
+            line-height: 20px
+            text-transform: uppercase
+            color: gray
+            position: relative
+
+    &.facebook .signature .date:before, &.twitter .signature .date:before
+        font-family: FontAwesome
+        font-size: 16px
+        color: gray
+        position: static
+        margin: 0px 5px 0 0px
+
+    &.facebook .signature .date:before
+        content: "\f09a"
+
+    &.twitter .signature .date:before
+        content: "\f099";
+
+    &.twitter::after
+        left: 14px
+        bottom: 13px
+
+    &.instagram::after
+        left: 23px
+        bottom: 23px
+
+    .facebook
+        .date
+            left: 15px
+            &::before
+                position: absolute
+                left: 0
+                right: 0
+                bottom: 10px
+                margin: 0 auto
+
+
+    @media(max-width:680px)
+
+        .img
+            width: 50px
+            height: 50px
+            float: left
+
+            img
+                width: 50px
+                height: 50px
+                border-radius: 50px
+
+        .quote
+            max-width: 70%
+            float: left
+            font-family: BentonSansComp
+            font-size: 20px
+            line-height: 25px
+            color: black
+            position: relative
+            min-height: 99px
+            overflow: hidden
+            padding-left: 20px
+
+            em
+                font-family: BentonSansCond-Bold
+                font-size: 36px
+                line-height: 30px
+                margin: 0 5px
+                color: darkgray
+
+                &.open-quote
+                    position: absolute
+                    left: -4px
+                    top: 4px
+
+                &.close-quote
+                    position: relative
+                    left: 0px
+                    top: 7px
+                    line-height: 19px
+
+        .signature
+            position: relative
+            top: 10px
+            left: 70px
+            clear: left
+            display: block
+
+            .username
+                font-family: BentonSansCond-Bold
+                font-size: 16px
+                line-height: 18px
+                color: orange
+                text-transform: uppercase
+
+            .date
+                font-family: BentonSansCond
+                font-size: 16px
+                line-height: 20px
+                text-transform: uppercase
+                color: gray
+                position: relative
+
+        &.facebook .signature .date:before, &.twitter .signature .date:before
+            font-family: FontAwesome
+            font-size: 16px
+            color: gray
+            position: static
+            margin: 0px 5px 0 0px
+
+        &.facebook .signature .date:before
+            content: "\f09a"
+
+        &.twitter .signature .date:before
+            content: "\f099";
+
+        &.twitter::after
+            left: 14px
+            bottom: 13px
+
+        &.instagram::after
+            left: 23px
+            bottom: 23px
+
+        .facebook
+            .date
+                left: 15px
+                &::before
+                    position: absolute
+                    left: 0
+                    right: 0
+                    bottom: 10px
+                    margin: 0 auto
+
+    @media(min-width:300px)
+        width: ($smphonecolWidth*2)px
+        // height: ($smphonecolWidth)px
+
+    @media (min-width: 374px)
+        width: ($medphonecolWidth*2)px
+        // height: ($medphonecolWidth)px
+
+    @media (min-width: 400px)
+        width: ($lrgphonecolWidth*2)px
+        // height: ($lrgphonecolWidth)px
+
+    @media(min-width:681px)
+        width: ($smcolWidth*2 + $gutter)px
+        height: ($smcolWidth)px
+
+    @media(min-width:770px)
+        width: ($colWidth*2 + $gutter)px
+        height: ($colWidth)px
+
+    @media(min-width:1025px)
+        width: (($lrgcolWidth*2 + $gutter))px
+        height: ($lrgcolWidth)px

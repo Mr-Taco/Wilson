@@ -1,0 +1,25 @@
+
+
+
+
+video#hero-video(poster="/burn/video/kei/cover.jpg" preload="none")
+    source(type="video/youtube" src="https://www.youtube.com/watch?v=7gBUAsGzUQM")
+
+iframe#marquee-fallback(src="https://www.youtube.com/embed/7gBUAsGzUQM?rel=0&amp;showinfo=0" width="100%" height="100%" fullscreen="true")
+
+#hero-overlay
+    #play-btn-wrapper
+        img#play-btn(src="/burn/images/Phase2/play-button.svg")
+        img#play-btn-hover(src="/burn/images/Phase2/play-button-hover.svg" data-ga-tag='marquee video play' data-ga-type="button")
+    p#watch-video #{__("marquee.watch_video")}
+
+    .overlay-container
+        .video-title
+            span #{__("marquee.video_title")}
+        .video-caption
+            p #{__("marquee.video_caption")}
+
+        if locals.locale === 'en-us'
+            a(href="http://www.wilson.com/en-us/forms/finddealers/?prod_cat=0A0W0R0106" target="_blank")
+                button #{__("marquee.button_desktop")}
+

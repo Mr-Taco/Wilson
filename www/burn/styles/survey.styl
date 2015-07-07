@@ -1,0 +1,647 @@
+
+
+$sliderWidthLg = 73%
+$sliderWidthSm = 68%
+
+#survey
+    width: 100%
+    background-image: url('../images/black-tile-bg.png')
+    background-position:center top
+    background-repeat:repeat
+    padding-top: 110px
+    text-align: center
+
+    #welcome
+        font-family:BentonSans-Book
+        padding:70px 0 270px
+        position:relative
+        span.user
+
+            font-size:28px
+            color:white
+            padding-bottom:20px
+            display: inline-block
+
+        p
+            font-size:20px
+            line-height:24px
+            color:#979797
+
+        .debriefing
+            width:60px
+            height:60px
+            background-position:center
+            background-repeat:no-repeat
+            background-image: url('../images/debriefing.png')
+            position: absolute
+            left: 50%
+            top: 215px
+            transform:translateX(-50%)
+
+            @media screen and (max-width:580px)
+                top: 270px
+
+
+
+    #survey-wrapper
+        width: 90%
+        max-width: 550px
+        margin: 0 auto
+        height: 100%
+
+    #survey-form
+        width:100%
+
+
+
+    .rank-number
+        color:#979797
+        font-size:28px
+        font-family BentonSans-Bold
+        position:absolute
+        top: 50%
+        transform: translateY(-50%)
+        left: -35px
+
+        @media screen and (max-width: 640px) and (orientation: portrait) {
+            left: 30px
+        }
+
+
+    span.question , label.question
+        color: #979797
+        font-family: BentonSans
+        font-size: 28px
+        line-height: 34px
+
+        .sub-question
+            margin-top: 10px
+            font-family: BentonSans-Book
+            text-transform: uppercase
+            font-size: 16px
+            color: gray
+            text-align: center
+            display: block
+
+        p
+            color: white
+
+    label.question
+        .question-wrapper
+            margin: 0 auto
+            display: block
+
+            .left-wrapper
+                display: inline-block
+
+                .qnumber
+                    display: inline
+                    padding: 0 20px 0 0
+                    color: #979797
+                    font-family: BentonSans
+                    font-size: 28px
+                    line-height: 34px
+
+            .right-wrapper
+                display: inline-block
+                max-width: 500px
+                vertical-align: top
+
+                @media screen and (max-width: 640px) and (orientation: portrait) {
+                    max-width: 240px
+                }
+
+                @media screen and (max-width: 640px) and (orientation: landscape) {
+                    max-width: 460px
+                }
+
+                p
+                    text-align: left
+
+                    &.sub-question
+                        display: block
+
+
+    .table
+        margin: 0 auto
+        border-spacing: 15px 10px
+        display:table
+        width: 100%
+
+    .table-row
+        width: 100%
+        display:table-row
+
+
+    .answer-wrapper
+        padding-top: 15px
+        margin-bottom: 175px
+
+        &#answer-7
+            width:50%
+
+
+        &#answer-9 .table:nth-child(2)
+            border-spacing: 15px
+
+
+        &#answer-10
+            margin-bottom:100px
+
+
+        #comparison-why
+            margin-top:0
+
+
+        .table-data
+            display: table-cell
+            cursor:pointer
+
+            &.hover , &.selected
+
+                .caption
+                    p
+                        color:red
+
+                .square , .rectangle , &.square , &.rectangle
+                    background-color: red
+                    border: 1px solid red
+
+                &.rank-2
+                    background-color:#e14504!important
+                    border-color:#e14504!important
+
+                &.rank-3
+                    background-color:#f1e000!important
+                    border-color:#f1e000!important
+
+            &#answer-9g
+                position: relative
+                left: 25%
+
+
+        .square , .rectangle
+            background-color: rgba(0,0,0,.5)
+            transition: all .35s ease-in-out
+            border: 1px solid gray
+            box-sizing: border-box
+            vertical-align:middle
+            text-align:center
+            position:relative
+
+
+        .square-right , .square-left
+            width:75px
+
+        .square-left
+            float:left
+
+        .square-right
+            float:right
+
+
+
+        .square
+            width: 75px
+            height: 75px
+
+            p
+                font-family: BentonSans-Light
+                font-size: 48px
+                line-height: 82px
+                letter-spacing: 0.025em
+                color: white
+
+        .rectangle
+            width: 50%
+            height:92px
+
+            &.single
+                width:100%
+
+            &.triple
+                width:33%
+
+            p
+                font-family: BentonSans-Book
+                font-size: 20px
+                line-height: 26px
+                padding: 0px 10px
+                letter-spacing: 0.025em
+                color: white
+
+                &.long
+                    line-height: 20px
+                    padding: 8px 5px
+
+
+
+        .caption
+            padding-top:15px
+            width: 75px
+            text-align: center
+            border: none
+
+
+            p
+                transition: color .35s ease-in-out
+                font-family: BentonSans
+                font-size: 20px
+                letter-spacing: 0.025em
+                color: gray
+
+        p.center
+            line-height: 22px !important
+            text-align:center
+            display: block
+            position: relative
+            top: 0%
+            // transform: translateY(-50%)
+
+
+
+        &.options-select , &.options-select-multi
+            textarea
+                width: 100%
+                height: 300px
+                border: 1px solid gray
+                background-color: darkgray
+                resize: none
+                font-family: BentonSans-Light
+                color: white
+                font-size: 18px
+                line-height: 20px
+                // margin-top: 50px
+                box-sizing: border-box
+                transition: height .35s ease-in-out , opacity .35s
+                cursor: pointer
+                padding: 10px
+                outline: none
+                box-sizing: border-box
+                opacity:1
+                overflow:hidden
+
+
+
+                &.hidden
+                    height:0px!important
+                    opacity:0
+                    visibility:visible!important
+
+
+
+
+        &.sliders
+            width: 100%
+
+            &#answer-4
+                padding-top: 55px
+
+            .slider-wrapper
+                width: 100%
+                position: relative
+                padding-bottom: 55px
+
+                &:last-child
+                    padding-bottom: 10px
+
+                .slider
+                    width: $sliderWidthLg
+                    margin: 0 auto
+                    position: relative
+                    height: 15px
+                    cursor: pointer !important
+
+
+
+                    .steps , .track
+                        position:absolute
+                        top:0
+                        left:0
+                        width:100%
+                        height:100%
+
+                        > div
+                            float:left
+                            width:20%
+                            height:100%
+                            border-right:1px solid white
+                            box-sizing:border-box
+
+                            &:last-child
+                                border-right:none
+
+
+                    .track
+                        border:1px solid white
+
+                        > div
+                            &:nth-child(1)
+                                background-color:rgba(241,223,0,.2)
+                            &:nth-child(2)
+                                background-color:rgba(255,108,0,.2)
+                            &:nth-child(3)
+                                background-color:rgba(225,69,0,.2)
+                            &:nth-child(4)
+                                background-color:rgba(218,26,49,.2)
+                            &:nth-child(5)
+                                background-color:rgba(148,10,11,.2)
+
+
+
+
+                    .steps
+                        clip:rect(0px 0px 15px 0px)
+                        top:1px
+                        left:1px
+
+                        > div
+
+                            &:nth-child(1)
+                                background-color:rgba(241,223,0,1)
+                            &:nth-child(2)
+                                background-color:rgba(255,109,0,1)
+                            &:nth-child(3)
+                                background-color:rgba(225,69,0,1)
+                            &:nth-child(4)
+                                background-color:rgba(218,26,49,1)
+                            &:nth-child(5)
+                                background-color:rgba(148,10,11,1)
+
+
+
+                    .slider-handle
+                        width: 6px
+                        height: 31px
+                        position: absolute
+                        top: -8px
+                        left: 0px
+
+                        cursor: pointer !important
+
+
+                        &:after
+                            content:""
+                            background-color: gray
+                            width:100%
+                            height:100%
+                            position:absolute
+                            top:0
+                            left:-50%
+
+                        &:before
+                            content: ""
+                            width: 300%
+                            height: 200%
+                            position: absolute
+                            top: -50%
+                            left: -150%
+
+
+
+                p
+                    text-transform: uppercase
+
+                    &.slider-title
+                        color: white
+                        text-align: left
+                        margin:0 auto 10px
+                        font-family: BentonSans-Bold
+                        font-size: 20px
+                        line-height: 36px
+                        letter-spacing: 0.025em
+                        width:$sliderWidthLg
+                        display:block
+
+                    &.slider-label
+                        color: gray
+                        font-size: 16px
+                        line-height: 36px
+                        font-family: BentonSans-Book
+                        position: absolute
+                        top: 40px
+
+                        &.left
+                            float: none
+                            left: 7px
+
+                        &.right
+                            float: none
+                            right: 15px
+
+                ol.slider-nums
+                    width: $sliderWidthLg
+                    margin: 20px auto
+
+                    li
+                        display: inline-block
+                        width: 20%
+                        text-align: left
+                        font-family: BentonSans-Book
+                        font-size: 16px
+                        position:relative
+                        color: white
+                        cursor: pointer
+                        // transform:
+
+                        > span
+                            position:absolute
+                            top:0
+                            transform-origin: 50% 50%
+
+                        > span:first-child
+                            right:-3%
+
+        &.input
+            input
+                width: 100%
+                border: 1px solid gray
+                background-color: darkgray
+                font-family: BentonSans-Light
+                color: white
+                font-size: 18px
+                line-height: 20px
+                outline: none
+                padding: 10px
+                outline: none
+                box-sizing: border-box
+
+        &.text-box
+
+            textarea
+                width: 100%
+                height: 300px
+                border: 1px solid gray
+                background-color: darkgray
+                resize: none
+                font-family: BentonSans-Light
+                color: white
+                font-size: 18px
+                line-height: 20px
+                padding: 10px
+                outline: none
+                box-sizing: border-box
+                transition: height .35s ease-in-out
+
+            textarea.hidden
+                height: 0px
+                padding: 0
+
+    button#submit
+        margin-bottom: 100px
+
+
+/* Scroll Nav */
+
+    #scroll-nav
+
+        position:fixed
+        right:50px
+        top:50%
+        transform:translateY(-50%)
+        width:16px
+        > div
+            box-sizing:border-box
+
+        .b-line, .t-line
+            width:100%
+            height:26px
+            position:relative
+
+            > span
+                cursor:pointer
+                font-family:BentonSans
+                color:#979797
+                display:block
+                position:absolute
+                font-size:12px
+                right: -26px
+                text-align:left
+                width:15px
+                transition:color .5s
+
+                &:before
+                    content:""
+                    position:absolute
+                    width: 70px
+                    height: 22px
+                    top: -5px
+                    left: -50px
+                    z-index: 1000000
+
+                &.selected
+                    color:red
+
+                &:first-child
+                    top:-6px!important
+
+                &:last-child
+                    top:auto
+                    bottom:-8px
+
+
+
+        .b-line
+            border-bottom:1px solid #979797
+
+        .t-line
+            border-top:1px solid #979797
+            height:27px
+
+        .v-line
+            position:absolute
+            border-left:1px solid #979797
+            left:50%
+            transform:translateX(-50%)
+            top:0
+            bottom:0
+            width:1px
+
+        .continue
+            width:52px
+            height:45px
+            position:absolute
+
+            background-position:center
+            background-size:auto 100%
+            background-image url('../images/scrolling.png')
+            background-repeat:no-repeat
+
+            top:270px
+            left:-18px
+            opacity: 1
+
+            transition:opacity .3s linear
+
+            &.hide
+                opacity:0
+
+
+        .anchor
+            position:absolute
+            top:0
+            left:0
+            width:24px
+            height:4px
+            left:-3px
+            background:red
+            transition:top .5s linear
+
+            &.goto-1
+                top:0
+
+            &.goto-2
+                top:24px
+
+            &.goto-3
+                top:50px
+
+            &.goto-4
+                top:76px
+
+            &.goto-5
+                top:102px
+
+            &.goto-6
+                top:128px
+
+            &.goto-7
+                top:154px
+
+            &.goto-8
+                top:180px
+
+            &.goto-9
+                top:206px
+
+            &.goto-10
+                top:233px
+
+
+
+
+
+
+
+
+
+@media (max-width:580px)
+
+    #survey #scroll-nav
+        display:none
+
+    #survey .answer-wrapper.sliders .slider-wrapper p.slider-title , #survey .answer-wrapper.sliders .slider-wrapper .slider , #survey .answer-wrapper.sliders .slider-wrapper ol.slider-nums
+        width:$sliderWidthSm
+
+    #survey .answer-wrapper.sliders .slider-wrapper p.slider-label.right
+        right:0
+
+    #survey .answer-wrapper.sliders .slider-wrapper p.slider-label.left
+        left:0
+
+    #survey .answer-wrapper#answer-7
+        width:100%
+
+    #survey .answer-wrapper#answer-8 .rectangle p
+        line-height: 22px !important
+

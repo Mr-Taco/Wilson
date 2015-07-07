@@ -1,0 +1,8 @@
+.item(data-date="#{data.get('date')}")
+    a(href="#{data.get('link')}" target="_blank")
+        .square-post.instagram(data-id="#{data.get('post_id')}" data-type="#{data.get('post_type') }" class=(data.get('featured') ? 'large' : 'small') style="background:url( #{ data.get('images').standard_resolution.url} );"   )
+            .hover-overlay
+                if data.get('caption') !== undefined
+                    p.caption #{data.get('caption').text}
+
+

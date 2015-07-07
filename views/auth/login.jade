@@ -1,0 +1,16 @@
+
+extends ../layout
+
+block body
+  if errors
+    for error in errors
+      error
+
+  form(role="form", action="/auth/local", method="post")
+    input(type="text", name="identifier", placeholder="Username or Email")
+    input(type="password", name="password", placeholder="Password")
+    button(type="submit") Sign in
+
+  if providers
+    for key in providers
+      a("/auth/#{providers[key].slug}" role='button') #{provider[key].name}

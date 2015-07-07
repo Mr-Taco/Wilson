@@ -1,0 +1,29 @@
+
+- var type = data.get('type')
+- var index = data.get('post_id').indexOf('_')
+- var postID = data.get('post_id').substring(index + 1)
+
+
+
+if type === 'photo'
+    div.item.square(data-date="#{data.get('date')}")
+        a(href="https://www.facebook.com/#{data.get('from').id}/posts/" + postID target="_blank")
+            .square-post.facebook( data-id="#{data.get('post_id')}" data-type="#{data.get('post_type') }" class=(data.get('featured') ? 'large' : 'small') style="background:url('https://graph.facebook.com/#{data.get('object_id')}/picture?type=normal');" )
+                .hover-overlay
+                    if data.get('message') !== undefined
+                        p.caption #{data.get('message')}
+
+else
+    div.item(data-date="#{data.get('date')}")
+        a(href="https://www.facebook.com/#{data.get('from').id}/posts/" + postID target="_blank")
+            .text-post.facebook(data-date="#{data.get('date')}" data-id="#{data.get('post_id')}" data-type="#{data.get('post_type') }" )
+                .img
+                    img(src='http://graph.facebook.com/#{data.get("from").id}/picture?type=normal&height=100&width=100')
+                .quote
+                    p
+                        em.open-quote &ldquo;
+                        span.post-body !{data.get("message")}
+                        em.close-quote &rdquo;
+                .signature
+                    p.username #{data.get("from").name}
+                    p.date #{moment(data.get("date")).fromNow()}

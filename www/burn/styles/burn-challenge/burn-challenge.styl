@@ -1,0 +1,93 @@
+section#burn-challenge
+    width: 100%
+    height: 768px
+    background: url('../images/Phase2/burn-challenge-bg.jpg') top right no-repeat
+    background-size: cover
+
+    #burn-challenge-content
+        width: 390px
+        height: 420px
+        position: absolute
+        top: 165px
+        left: 60px
+        text-transform: uppercase
+
+        h1
+            color: white
+            font-size: 120px
+            line-height: 97px
+            font-family: BentonSansExtraComp-Bold
+
+        p
+            &.global-competition
+                font-family: BentonSansExtraComp
+                font-size: 36px
+                color: white
+                margin-top: 25px
+
+            &.gocompete
+                font-family: BentonSansExtraComp-Bold
+                font-size: 36px
+                color: black
+
+        a#check-schedule, a#check-schedule-mobile
+            font-family: BentonSansComp
+            color: white
+            font-size: 16px
+            line-height: 20px
+            background-color: black
+            padding: 15px 0px 13px
+            margin-top: 25px
+            width: 325px
+            text-align: center
+            clear: both
+            text-decoration: none
+            z-index: 5
+            position: relative
+            transition: background-color .35s ease-in-out
+
+
+            &:hover
+                background-color: #999
+
+        a#check-schedule
+            display: inline-block
+
+        a#check-schedule-mobile
+            display: none
+
+
+    @media(max-width: 680px)
+        height: 546px
+        background: url('../images/Phase2/burn-challenge-bg-mobile.jpg') top no-repeat
+        background-size: cover
+
+        #burn-challenge-content
+            height: 280px
+            width: auto
+            top: 162px
+            left: 20px
+
+            h1
+                font-size: 65px
+                line-height: 55px
+
+            p
+                &.global-competition
+                    font-size: 22px
+                    margin-top: 18px
+                    max-width: 225px
+
+                &.gocompete
+                    font-size: 22px
+
+            a#check-schedule-mobile
+                font-size: 18px
+                width: 250px
+                margin: 18px auto 0
+
+            a#check-schedule
+                display: none
+
+            a#check-schedule-mobile
+                display: inline-block

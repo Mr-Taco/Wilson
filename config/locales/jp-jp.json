@@ -1,0 +1,408 @@
+{
+    "data_url": "/burn/data/jp.json",
+    "meta": {
+        "title": "Wilsonが送り出す新製品Burnシリーズ",
+        "description": "Introducing The Burn - The Next Generation of Performance Rackets From Wilson Tennis",
+        "keywords": "Wilson, ウィルソン、バーン、Burn, ラケット、テニス、tennis"
+    },
+    "navigation": {
+        "home": "Home",
+        "specs": "Specs",
+        "team_burn": "Team Burn",
+        "connect": "Connect",
+        "countries_list": [
+            {
+                "en-us": ""
+            },
+            {
+                "en-gb": ""
+            },
+            {
+                "fr-fr": ""
+            },
+            {
+                "de-de": ""
+            },
+            {
+                "it-it": ""
+            },
+            {
+                "es-es": ""
+            },
+            {
+                "es-la": ""
+            }
+        ],
+        "flag": "/burn/images/Phase2/flag-jap.jpg",
+        "change_region": "言語変更",
+        "country": "jp",
+        "logo_link": "http://www.wilson.co.jp/",
+        "buy_now": "Buy Now",
+        "preorder_burn": "Buy Now",
+        "preorder_link": "http://www.wilson.com/en-us/tennis/rackets/baseliner/burn/",
+        "preorder_tag": "header pre-order"
+    },
+    "marquee": {
+        "introducing": "Introducing",
+        "the_burn": "The Burn",
+        "next_generation": "The Next Generation Of Performance Rackets From Wilson Tennis",
+        "available_soon": " ",
+        "notify_me": {
+            "text": "Notify Me",
+            "mobile_text": "Available Soon. Click For Updates.",
+            "link": "http://www.wilson.com/en-us/tennis/rackets/baseliner/burn/"
+        },
+        "scroll_image": "/burn/images/Phase2/white-scroll-to-learn-jp.png",
+        "watch_video": "動画を見る",
+        "video_title": "Burn Play Test",
+        "video_caption": "錦織選手が求めた次世代ラケット「BURN」",
+        "button_desktop": "Buy Now",
+        "button_mobile": "Buy Now"
+    },
+    "specs": {
+        "marquee": {
+            "booming_power": "パワーとスピン性能を両立",
+            "built": "WILSONが自信を持って送り出す新世代ラケット"
+        },
+        "hotspots": [
+            {
+                "__id": "content-rounded-hoop",
+                "__data_id": "rounded-hoop",
+                "headline": "独特のラウンド形状",
+                "body": "BURN100等に新たに採用した、ラケット・フェイスを左右に拡大した独特のラウンド形状。その独特の形状により、スピンをかける際に発生する縦方向の動きにあわせてスイートスポットを拡大し、より攻撃的なプレーを可能にする。"
+            },
+            {
+                "__id": "content-spin-effect",
+                "__data_id": "spin-effect",
+                "headline": "スピン・イフェクト・テクノロジー",
+                "body": "回転力とコントロールの向上！"
+            },
+            {
+                "__id": "content-x2-shaft",
+                "__data_id": "x2-shaft",
+                "headline": "X2シャフト",
+                "body": "グリップを延長した「X2シャフト」を採用し、ダブルハンド・プレーヤーに対応"
+            },
+            {
+                "__id": "content-parallel-drilling",
+                "__data_id": "parallel-drilling",
+                "headline": "パラレル・ドリル",
+                "body": "スイートスポット拡大とパワー向上"
+            },
+            {
+                "__id": "content-carbon-fiber",
+                "__data_id": "carbon-fiber",
+                "headline": "ハイ・パフォーマンス・カーボン・ファイバー",
+                "body": "フレームの変形を押さえ、球速アップを実現"
+            }
+
+        ],
+        "gallery": [
+            {
+                "mobile_image": "/burn/images/Phase2/mobile-racket-jp-1.png",
+                "desktop_image": "/burn/images/Phase2/desktop-racket-jp-1.png"
+            },
+            {
+                "mobile_image": "/burn/images/Phase2/mobile-racket-jp-5.png",
+                "desktop_image": "/burn/images/Phase2/desktop-racket-jp-5.png"
+            },
+            {
+                "mobile_image": "/burn/images/Phase2/mobile-racket-jp-3.png",
+                "desktop_image": "/burn/images/Phase2/desktop-racket-jp-3.png"
+            },
+            {
+                "mobile_image": "/burn/images/Phase2/mobile-racket-jp-4.png",
+                "desktop_image": "/burn/images/Phase2/desktop-racket-jp-4.png"
+            },
+            {
+                "mobile_image": "/burn/images/Phase2/mobile-racket-jp-2.png",
+                "desktop_image": "/burn/images/Phase2/desktop-racket-jp-2.png"
+            }
+        ],
+        "see_full_line": "すべてのラインナップを見る",
+        "explore_full_line": "すべてのラインナップを見る",
+        "swipe": "スワイプ",
+        "click": "クリック",
+        "view_more_features": "他の機能を見るには",
+        "view_more_rackets": "他のラケットを見るには",
+        "specs_table_headers": {
+            "ages": "推奨年齢",
+            "headsize": "ヘッドサイズ",
+            "weight": "重量（ストリング無し）",
+            "balance": "バランス（ストリング無し）",
+            "pattern": "ストリング・パターン"
+        },
+        "specs_table": [
+            {
+                "__id": "racket1",
+                "name": {
+                    "burn": "Burn",
+                    "model_num": "95<em>S</em>",
+                    "tag": "S"
+                },
+                "specs": [
+                    "錦織圭選手モデル"
+                ],
+                "age": " ",
+                "headsize": "95 / 613",
+                "weight": "10.9oz / 309g",
+                "balance": "32.5cm / 7 pts HL",
+                "pattern": "16 x 20",
+                "linkout": "http://www.wilson.com/en-us/tennis/rackets/baseliner/burn/burn-100uls/",
+                "preorder_btn": "Buy Now",
+                "preorder_link": "http://www.wilson.com/en-us/tennis/rackets/baseliner/burn/burn-100uls/",
+                "preorder_tag": "specs table pre-order 95S",
+                "btn_text": "Buy The Burn"
+            },
+            {
+                "__id": "racket2",
+                "name": {
+                    "burn": "Burn",
+                    "model_num": "100<em>LS</em>",
+                    "tag": ""
+                },
+                "specs": [
+                    "軽量、パワー",
+                    "スピンイフェクト・テクノロジーによる高い回転性能とコントロール",
+                    "高い操作性"
+                ],
+                "age": "１２歳以上",
+                "headsize": "100 / 645",
+                "weight": "10oz / 283g",
+                "balance": "33.5cm / 3 pts HL",
+                "pattern": "18 x 16",
+                "linkout": "http://www.wilson.com/en-us/tennis/rackets/baseliner/burn/burn-100ls/",
+                "preorder_btn": "Learn More",
+                "preorder_link": "http://www.wilson.com/en-us/tennis/rackets/baseliner/burn/burn-100ls/",
+                "preorder_tag": "specs table pre-order 100ls",
+                "btn_text": "Learn More"
+            },
+            {
+                "__id": "racket3",
+                "name": {
+                    "burn": "Burn",
+                    "model_num": "100<em>S</em>",
+                    "tag": "S"
+                },
+                "specs": [
+                    "向上したスピード",
+                    "スピンイフェクト・テクノロジーによる正確性",
+                    "攻撃的かつ重いショット"
+                ],
+                "age": "１４歳以上",
+                "headsize": "100 / 645",
+                "weight": "10.7oz / 303g",
+                "balance": "33cm / 4 pts HL",
+                "pattern": "18 x 16",
+                "linkout": "http://www.wilson.com/en-us/tennis/rackets/baseliner/burn/burn-100s/",
+                "preorder_btn": "Buy Now",
+                "preorder_link": "http://www.wilson.com/en-us/tennis/rackets/baseliner/burn/burn-100s/",
+                "preorder_tag": "specs table pre-order 100s",
+                "btn_text": "Buy The Burn"
+            },
+            {
+                "__id": "racket4",
+                "name": {
+                    "burn": "Burn",
+                    "model_num": "100",
+                    "tag": " "
+                },
+                "specs": [
+                    "ハイパワーモデル",
+                    "Parallel Drilling",
+                    "アスリート向けの快適な打球感とコントロール性"
+                ],
+                "age": "１６歳以上",
+                "headsize": "100 / 645",
+                "weight": "10.7oz / 303g",
+                "balance": "33cm / 4 pts HL",
+                "pattern": "16 x 19",
+                "linkout": "http://www.wilson.com/en-us/tennis/rackets/baseliner/burn/burn-100/",
+                "preorder_btn": "Learn More",
+                "preorder_link": "http://www.wilson.com/en-us/tennis/rackets/baseliner/burn/burn-100/",
+                "preorder_tag": "specs table pre-order 100",
+                "btn_text": "Learn More"
+            }
+        ]
+    },
+    "team_burn": {
+        "introducing": "Introducing Team Burn",
+        "team_burn": "Team Burn",
+        "expand": "続きを見る",
+        "collapse": "小さくする",
+        "next_player": "次のプレーヤー",
+        "previous_player": "前のプレーヤー",
+        "legal": "＊プロテニスプレーヤーはラケットの仕様を変更し試合に臨むことがあり、一般に販売されているものと異なる場合があります。",
+        "players": [
+            [
+                {
+                    "__id": "kei",
+                    "__tracking": {
+                        "tag": "kei profile view",
+                        "type": "image link"
+                    },
+                    "images": {
+                        "headshot": "/burn/images/Phase2/kei-headshot.jpg",
+                        "thumb_active": "/burn/images/Phase2/team-kei-thumbnail-active.jpg",
+                        "thumb_inactive": "/burn/images/Phase2/team-kei-thumbnail-inactive.jpg"
+                    },
+                    "full_name": "Kei Nishikori",
+                    "interview_data_height": "180",
+                    "interview": [
+                        {
+                            "q": "テニス以外で好きなことは何ですか？",
+                            "a": "のんびりする、友人達との夕食、ゴルフ、映画"
+                        },
+                        {
+                            "q": "試合の前に必ずやること（ルーティンなど）を教えてください。",
+                            "a": "静かなところで集中するようにしています。"
+                        },
+                        {
+                            "q": "自分のラケットで気に入っているところを教えてください。",
+                            "a": "スピードとスピン性能"
+                        },
+                        {
+                            "q": "好きな練習を教えて下さい。",
+                            "a": "トレーニングを楽しめるようにいつも工夫をしています。"
+                        },
+                        {
+                            "q": "練習時間は週に何時間ですか？",
+                            "a": "沢山。多分、１日６時間くらい。"
+                        },
+                        {
+                            "q": "テニスを始めた歳を教えてください。",
+                            "a": "５歳のときから。"
+                        }
+                    ]
+                },
+                {
+                    "__id": "simona",
+                    "__tracking": {
+                        "tag": "simona profile view",
+                        "type": "image link"
+                    },
+                    "images": {
+                        "headshot": "/burn/images/Phase2/simona-headshot.jpg",
+                        "thumb_active": "/burn/images/Phase2/team-simona-thumbnail-active.jpg",
+                        "thumb_inactive": "/burn/images/Phase2/team-simona-thumbnail-inactive.jpg"
+                    },
+                    "full_name": "Simona Halep",
+                    "interview_data_height": "162",
+                    "interview": [
+                        {
+                            "q": "テニス以外で好きなことは何ですか？",
+                            "a": "音楽を聞くのが好きです。"
+                        },
+                        {
+                            "q": "試合の前に必ずやること（ルーティンなど）を教えてください。",
+                            "a": "試合前に新しいオーバー・グリップを巻くようにしています。"
+                        },
+                        {
+                            "q": "自分のラケットで気に入っているところを教えてください。",
+                            "a": "とにかくお気に入りです。"
+                        },
+                        {
+                            "q": "好きな練習を教えて下さい。",
+                            "a": "ジムにいるよりコートでの練習が好きです。"
+                        },
+                        {
+                            "q": "練習時間は週に何時間ですか？",
+                            "a": "およそ週１７時間。"
+                        },
+                        {
+                            "q": "テニスを始めた歳を教えてください。",
+                            "a": "４歳半のときに始めました。"
+                        }
+                    ]
+                }
+            ],
+            [
+                {
+                    "__id": "ernest",
+                    "__tracking": {
+                        "tag": "ernest profile view",
+                        "type": "image link"
+                    },
+                    "images": {
+                        "headshot": "/burn/images/Phase2/ernest-headshot.jpg",
+                        "thumb_active": "/burn/images/Phase2/team-ernest-thumbnail-active.jpg",
+                        "thumb_inactive": "/burn/images/Phase2/team-ernest-thumbnail-inactive.jpg"
+                    },
+                    "full_name": "Ernests Gulbis",
+                    "interview_data_height": "192",
+                    "interview": [
+                        {
+                            "q": "テニス以外で好きなことは何ですか？",
+                            "a": "読書に音楽鑑賞、それとチェス！"
+                        },
+                        {
+                            "q": "試合の前に必ずやること（ルーティンなど）を教えてください。",
+                            "a": "試合の１時間前にチームで集まり２０分間の間テニス以外のことを話します。その後、ロッカールームで試合に向けて集中力を高めて行きます。"
+                        },
+                        {
+                            "q": "自分のラケットで気に入っているところを教えてください。",
+                            "a": "思いきり振り抜いてショットを打ち続ける時に、常に信頼できることとボールををコントロールできるところ。"
+                        },
+                        {
+                            "q": "好きな練習を教えて下さい。",
+                            "a": "ショットを決めて１００回繰り返すこと。"
+                        },
+                        {
+                            "q": "練習時間は週に何時間ですか？",
+                            "a": "２０から２５時間。"
+                        },
+                        {
+                            "q": "テニスを始めた歳を教えてください。",
+                            "a": "７歳から"
+                        }
+                    ]
+                },
+                {
+                    "__id": "pablo",
+                    "__tracking": {
+                        "tag": "ernest profile view",
+                        "type": "image link"
+                    },
+                    "images": {
+                        "headshot": "/burn/images/Phase2/pablo-headshot.jpg",
+                        "thumb_active": "/burn/images/Phase2/team-pablo-thumbnail-active.jpg",
+                        "thumb_inactive": "/burn/images/Phase2/team-pablo-thumbnail-inactive.jpg"
+                    },
+                    "full_name": "Pablo Carreno Busta",
+                    "interview_data_height": "182",
+                    "interview": [
+                        {
+                            "q": "テニス以外で好きなことは何ですか？",
+                            "a": "友人達と会ったり、他のスポーツを楽しんだり、テレビでスポーツ観戦。"
+                        },
+                        {
+                            "q": "試合の前に必ずやること（ルーティンなど）を教えてください。",
+                            "a": "ラケットを準備、準備運動をしてからコーチや親しい人と話をします"
+                        },
+                        {
+                            "q": "自分のラケットで気に入っているところを教えてください。",
+                            "a": "前のラケットよりカラフルになって見た目がとにかく気に入っています。"
+                        },
+                        {
+                            "q": "好きな練習を教えて下さい。",
+                            "a": "競争するのが好きなので、他の選手と試合をするのが好きです。"
+                        },
+                        {
+                            "q": "練習時間は週に何時間ですか？",
+                            "a": "１日２時間をテニス、２時間を身体トレーニングに費やしています。週に２０時間。"
+                        },
+                        {
+                            "q": "テニスを始めた歳を教えてください。",
+                            "a": "６歳のとき。"
+                        }
+                    ]
+                }
+            ]
+        ]
+    },
+    "connect": {
+        "world_premier": "The World's Premier",
+        "baseliner_collective": "Baseliner Collective",
+        "show_the_world": "世界に自慢のラケットを見せつけよう！ #<em>Burn</em>THE<em>Baseline</em> "
+    }
+}

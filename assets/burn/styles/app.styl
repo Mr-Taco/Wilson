@@ -1,0 +1,478 @@
+red = #da1a32
+orange = #ff6c00
+yellow = #f1e000
+gray = #979797
+darkgray = #161616
+
+.left
+    float: left
+
+.right
+    float: right
+
+.hidden
+    visibility: hidden
+
+.pad-15
+    padding:15px 15px 0
+
+.desktop
+    display: block
+
+    @media(max-width: 680px)
+        display: none
+
+.mobile
+    display: none
+
+    @media(max-width: 680px)
+        display: block
+
+html, body
+    background-color: black
+    // height: 100%
+    -webkit-tap-highlight-color:rgba(0,0,0,0)
+
+header
+    background-color: red
+    height: 60px
+    width: 100%
+    position: fixed
+    box-sizing: border-box
+    transition:top .3s
+    z-index:10043
+
+    &.show
+        top:0
+
+    img#header-logo
+        position: absolute
+        top: 15px
+        left: 10px
+        z-index: 100
+        cursor: pointer
+        display: block
+
+    img#header-logo-mobile
+        position: absolute
+        top: 10px
+        left: 15px
+        display: none
+        width: 100px
+        z-index: 71
+
+    #nav-wrapper
+        position: absolute
+        right: -80px
+        top: 0px
+        width: 100%
+        height: 100%
+        z-index: 70
+        transition: right .35s ease-in-out
+
+        &.show-share-icons
+            @media(min-width: 801px)
+                right: 10px
+
+        ol#nav
+            text-transform: uppercase
+            float: right
+            margin-top: 22px
+
+            li
+                display: block
+                float: left
+
+            a.link
+                color: white
+                font-family: BentonSansComp
+                font-size: 15px
+                letter-spacing: 0.05em
+                margin: 0 15px
+                text-decoration: none
+                padding-bottom: 3px
+                border-bottom: 2px solid transparent
+                transition: border-bottom .35s ease-in-out
+
+                &:hover, &.active
+                    border-bottom: 2px solid white
+
+            a.btn
+                color: white
+                padding: 10px 15px
+                border: 1px solid white
+                font-family: BentonSansComp-Medium
+                font-size: 16px
+                line-height: 21px
+                text-decoration: none
+                margin-left: 7px
+                margin-right: 8px
+                position: relative
+                top: -1px
+                transition: color .35s ease-in-out, border .35s ease-in-out
+
+                &:hover
+                    color: black
+                    border: 1px solid black
+
+            a#nav-select
+                color: white
+                font-family: BentonSansComp
+                font-size: 15px
+                letter-spacing: 0.05em
+                margin: 0 15px
+                text-decoration: none
+                position: relative
+                top: -6px
+                padding: 20px 0
+                cursor: pointer
+
+                img.current-flag, i
+                    position: relative
+                    top: 2px
+                    right: 3px
+                    margin: 0 5px
+                    font-size: 22px
+                    z-index: 25
+
+                    &.es, &.it, &.ch, &.fr
+                        border: 1px solid white
+
+                .localization-wrapper
+                    position: absolute
+                    background-color: black
+                    top: 60px
+                    right: 0px
+                    width: 330px
+                    padding: 20px 20px 10px
+                    box-sizing: border-box
+                    display: none
+                    opacity: 0
+                    z-index: 20
+
+                    .current-language
+                        position: absolute
+                        height: 60px
+                        width: 80px
+                        top: -60px
+                        right: 0px
+                        background-color: black
+                        z-index: -5
+
+                    .language-list
+                        p
+                            color: white
+                            text-transform: uppercase
+                            font-family: BentonSansExtraComp-Bold
+                            font-size: 16px
+                            margin-bottom: 10px
+
+                        span.country
+                            width: 140px
+                            display: inline-block
+                            cursor: pointer
+
+                            img,p
+                                display: inline-block
+
+                                &.country
+                                    font-size: 17px
+                                    line-height: 20px
+                                    font-family: BentonSansExtraComp
+                                    text-transform: uppercase
+                                    padding-left: 8px
+
+                                &.flag
+                                    margin-top: 1px
+                                    margin: 0
+
+            img.share-icon
+                margin: -4px 20px 0 10px
+                cursor: pointer
+
+            img#header-share-fb, img#header-share-twitter
+                padding: 0 10px
+                margin-top: -4px
+                cursor: pointer
+                opacity: 0
+                transition: opacity .35s ease-in-out
+
+                &.visible
+                    opacity: 1
+
+            i
+                color: white
+                font-size: 24px
+
+                &.fa-share-alt
+                    margin: -4px 15px 0 10px
+
+                &.fa-facebook, &.fa-twitter
+                    padding: 0 10px 0 5px
+                    margin-top: -4px
+                    opacity: 0
+                    cursor: pointer
+                    transition: opacity .35s ease-in-out, color .35s ease-in-out
+
+                    &.visible
+                        opacity: 1
+
+                    &:hover
+                        color: gray
+
+                &.fa-twitter
+                    font-size: 28px
+                    margin-top: -5px
+
+        img#mobile-nav-icon
+            position: absolute
+            top: 11px
+            right: 15px
+            display: none
+            height: 25px
+            z-index: 55
+
+        img#mobile-nav-close
+            position: absolute
+            top: 0px
+            right: 0px
+            height: 49px
+            z-index: 55
+            display: none
+            transition: all .35s ease-in-out
+            transform: matrix3d(1, 0, 0, 0, 0, 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1);
+
+    @media(max-width:800px)
+        height: 48px
+
+        img#header-logo
+            z-index: 71
+            left: 15px
+            display: none
+
+        img#header-logo-mobile
+            display: block
+            top: 10px
+
+        #nav-wrapper
+            position: relative
+            right: 0
+            top: 0
+            background-color: red
+
+            ol#nav
+                display: none
+
+            img#mobile-nav-icon
+                display: block
+
+            img#mobile-nav-close
+                display: block
+
+
+    #mobile-nav-wrapper
+        width: 100%
+        background-color: black
+        position: absolute
+        top: -850px
+        left: 0
+        padding: 15px 0 20px
+        z-index: 55
+        transition: top .35s ease-in-out
+
+        @media(max-height: 550px)
+            height: 420px
+            overflow: scroll
+            padding: 15px 0 20px !important
+
+        @media(orientation: landscape)
+            height: 260px
+
+        &.usa
+            .container
+                padding-bottom: 60px
+
+                @media(min-width: 700px)
+                    padding-bottom: 0px
+
+                @media(orientation: landscape)
+                    height: 450px
+
+            #change-region-wrapper
+                @media(min-width: 700px)
+                    margin: 100px auto 0
+
+        &.open
+            top: 60px
+
+        .container
+            position: relative
+
+        ol#mobile-nav
+            width: 100%
+
+            li
+                height: 50px
+                text-align: center
+
+                a
+                    font-family: BentonSansExtraComp-Bold
+                    font-size: 27px
+                    line-height: 57px
+                    letter-spacing: 0.025em
+                    color: white
+                    text-decoration: none
+                    text-transform: uppercase
+                    cursor: pointer
+
+        a.btn
+            font-family: BentonSansComp
+            font-size: 18px
+            background-color: red
+            color: white
+            padding: 3.5% 0
+            text-align: center
+            position: absolute
+            left: 15px
+            right: 15px
+            bottom: 25px
+            text-decoration: none
+            text-transform: uppercase
+            cursor: pointer
+            max-width: 450px
+            margin: 0 auto
+
+            @media(min-width: 700px)
+                bottom: 170px
+                font-size: 22px
+                padding: 3% 0
+
+        #change-region-wrapper
+            width: 100%
+            background-color: black
+            padding: 20px 10px 10px
+            box-sizing: border-box
+            max-width: 650px
+            margin: 0 auto
+
+            p
+                color: white
+                font-family: BentonSansExtraComp-Bold
+                font-size: 20px
+                padding-bottom: 10px
+                padding-left: 5px
+                text-transform: uppercase
+
+                @media(min-width: 700px)
+                    text-align: center
+                    border-bottom: 1px solid gray
+                    padding-bottom: 5px
+                    margin-bottom: 15px
+                    font-size: 28px
+
+
+            span.country
+                width: 50%
+                display: inline-block
+                color: white
+                font-family: BentonSansExtraComp
+                font-size: 18px
+
+                img,p
+                    display: inline-block
+                    padding-left: 5px
+                    border: none
+                    font-size: 20px
+                    font-family: BentonSansExtraComp
+
+                p
+                    padding-left: 10px
+
+            @media(min-width: 700px)
+                margin: 10px auto 0
+
+                span.country
+                    width: 25%
+
+
+#nav li, #mobile-nav-wrapper a, a.orange-btn, tr.pre-order
+    &.gb, &.es, &.de, &.fr, &.it, &.ch, &.jp
+        display: none !important
+
+
+
+
+#content
+    width: 100%
+    min-width: 100%
+    padding-top: 60px
+
+    @media(max-width:800px)
+        padding-top: 48px
+
+input:focus , textarea:focus
+    outline-color:red
+
+
+button.red-btn
+    width: 100%;
+    max-width: 250px
+    height: 50px
+    background-color: red
+    color: white
+    font-family: BentonSansComp-Bold
+    font-size: 18px
+    text-transform: uppercase
+    text-align: center
+    padding: 0
+    border: 1px solid red
+    border: 1px solid red
+    box-sizing: border-box
+    border-radius: 0
+    outline: none
+    cursor: pointer
+    transition: all .35s ease-in-out
+
+    &:hover
+        background-color: #999
+        border: 1px solid #999
+
+
+span.error
+    display:block
+    font-size:14px
+    height:15px
+    color:red
+    opacity:0
+    font-family: BentonSansComp-Book
+    transition: opacity .4s
+    padding-top: 10px
+
+    &.show
+        opacity:1
+
+
+section
+    position:relative
+
+canvas#webgl
+    display: none
+
+figure
+    margin: 0px 0px !important
+    -webkit-margin-before: 0
+    -webkit-margin-after: 0
+    -webkit-margin-start: 0
+    -webkit-margin-end: 0
+
+    &.small
+        margin-bottom: 10px
+
+a
+    text-decoration: none
+    cursor: pointer
+
+button
+    cursor: pointer
+
+

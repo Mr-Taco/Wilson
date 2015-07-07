@@ -1,0 +1,19 @@
+#specs-loader
+    svg.loader-spinner(width="150px" height="150px" viewBox="0 0 150 150")
+        g.outer
+            circle(r="65px" fill="transparent" stroke-width="6px" stroke="#ffffff")
+        g.load-meter
+            circle(r="48px" fill="transparent" stroke-width="10px" stroke="#F4CE21")
+        g.inner
+            circle(r="32px" fill="#ff6c00" stroke-width="6px" stroke="#F4CE21")
+
+    .progress
+        span.loading #{data.get('copy').loading}
+        span.amount 0
+
+    .loading-copy
+        span #{data.get('copy').initializing}
+
+
+#specs-cta
+    img(src="#{data.get('assets').loaderCta}")

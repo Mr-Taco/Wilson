@@ -1,0 +1,394 @@
+{
+    "data_url": "/burn/data/ch.json",
+    "meta": {
+        "title": "Wilson Burn - 底线型选手的球拍",
+        "description": "Introducing The Burn - The Next Generation of Performance Rackets From Wilson Tennis",
+        "keywords": "Wilson, 网球，Burn网络，燃烧底线，Burn, 球拍"
+    },
+    "navigation": {
+        "home": "首页",
+        "specs": "参数",
+        "team_burn": "之队",
+        "connect": "联系",
+        "countries_list": [
+            {"en-us": ""},
+            {"en-gb": ""},
+            {"fr-fr": ""},
+            {"de-de": ""},
+            {"it-it": ""},
+            {"es-es": ""},
+            {"es-la": ""}
+        ],
+        "flag": "/burn/images/Phase2/flag-chi.jpg",
+        "change_region": "更换国家",
+        "country": "ch",
+        "logo_link": "http://wilsongf.tmall.com/index.htm?spm=a1z10.3.w5002-5513941075.2.GogvjN",
+        "preorder": "Pre-Order",
+        "preorder_burn": "Pre-Order The Burn",
+        "preorder_link": "http://www.wilson.com/en-us/tennis/rackets/baseliner/burn/",
+        "preorder_tag": "header pre-order"
+    },
+    "marquee": {
+        "introducing": "全面介绍",
+        "the_burn": "BURN",
+        "next_generation": "全新年轻一代专业网球拍",
+        "available_soon": " ",
+        "notify_me": {
+            "text": "预购BURN",
+            "mobile_text": "Available Soon. Click For Updates.",
+            "link": "http://www.wilson.com/en-us/tennis/rackets/baseliner/burn/"
+        },
+        "scroll_image": "/burn/images/Phase2/white-scroll-to-learn-chi.png",
+        "watch_video": "观看视频",
+        "video_title": "Burn测试结果",
+        "video_caption": "锦织圭测试全新一代选手拍",
+        "button": {
+            "desktop": "Buy Now",
+            "mobile": "Available Soon. Click For Updates"
+        }
+    },
+    "specs": {
+        "marquee": {
+            "booming_power": "超凡力量 + 旋转",
+            "built": "特别为底线型选手设计"
+        },
+        "hotspots": [
+            {
+                "__id": "content-rounded-hoop",
+                "__data_id": "rounded-hoop",
+                "headline": "圆形拍框",
+                "body": "有助于扩大击球甜区, 击出更有竞争力的直线击球"
+            },
+            {
+                "__id": "content-spin-effect",
+                "__data_id": "spin-effect",
+                "headline": "Spin Effect Technology 旋转效应科技",
+                "body": "带来有力击球和全面控制"
+            },
+            {
+                "__id": "content-x2-shaft",
+                "__data_id": "x2-shaft",
+                "headline": "X2 Shaft 拍杆",
+                "body": "科技通过更长的拍柄来最大程度提升双手反拍的手感"
+            },
+            {
+                "__id": "content-parallel-drilling",
+                "__data_id": "parallel-drilling",
+                "headline": "Parallel Drilling 平行线孔",
+                "body": "提供更大和更具容错度的甜区"
+            },
+            {
+                "__id": "content-carbon-fiber",
+                "__data_id": "carbon-fiber",
+                "headline": "High Performance Carbon fiber 高强度碳素纤维",
+                "body": "提升拍框硬度, 击球时更具有爆发力"
+            }
+
+        ],
+        "gallery": [
+            {
+                "mobile_image": "/burn/images/Phase2/mobile-racket-ch-1.png",
+                "desktop_image": "/burn/images/Phase2/desktop-racket-ch-1.png"
+            },
+            {
+                "mobile_image": "/burn/images/Phase2/mobile-racket-ch-5.png",
+                "desktop_image": "/burn/images/Phase2/desktop-racket-ch-5.png"
+            },
+            {
+                "mobile_image": "/burn/images/Phase2/mobile-racket-ch-3.png",
+                "desktop_image": "/burn/images/Phase2/desktop-racket-ch-3.png"
+            },
+            {
+                "mobile_image": "/burn/images/Phase2/mobile-racket-ch-4.png",
+                "desktop_image": "/burn/images/Phase2/desktop-racket-ch-4.png"
+            },
+            {
+                "mobile_image": "/burn/images/Phase2/mobile-racket-ch-2.png",
+                "desktop_image": "/burn/images/Phase2/desktop-racket-ch-2.png"
+            }
+        ],
+        "see_full_line": "查看BURN全系列球拍",
+        "explore_full_line": "探索全系列Burn球拍",
+        "swipe": "移动",
+        "click": "点击",
+        "view_more_features": "来观察更多的信息",
+        "view_more_rackets": "了解更多球拍",
+        "specs_table_headers": {
+            "ages": "建议年龄",
+            "headsize": "拍面大小",
+            "weight": "空拍重量",
+            "balance": "空拍平衡点",
+            "pattern": "穿线方式"
+        },
+        "specs_table": [
+            {
+                "__id": "racket1",
+                "name": {
+                    "burn": "Burn",
+                    "model_num": "100<em>ULS</em>",
+                    "tag": "ULS"
+                },
+                "specs": [
+                    "最轻旋转效应科技球拍",
+                    "轻松挥拍",
+                    "容易上手"
+                ],
+                "age": "10周岁及以上",
+                "headsize": "100 / 645",
+                "weight": "9.3oz / 263g",
+                "balance": "33.5cm / 3 pts HL",
+                "pattern": "18 x 16",
+                "linkout": "http://www.wilson.com/en-us/tennis/rackets/baseliner/burn/burn-100uls/",
+                "preorder_btn": "Pre-Order",
+                "preorder_link": "http://www.wilson.com/en-us/tennis/rackets/baseliner/burn/burn-100uls/",
+                "preorder_tag": "specs table pre-order 100uls"
+            },
+            {
+                "__id": "racket2",
+                "name": {
+                    "burn": "Burn",
+                    "model_num": "100<em>LS</em>",
+                    "tag": "LS"
+                },
+                "specs": [
+                    "轻量有力",
+                    "旋转效应科技从底线提供更多控制",
+                    "容易操控"
+                ],
+                "age": "12周岁及以上",
+                "headsize": "100 / 645",
+                "weight": "10oz / 283g",
+                "balance": "33.5cm / 3 pts HL",
+                "pattern": "18 x 16",
+                "linkout": "http://www.wilson.com/en-us/tennis/rackets/baseliner/burn/burn-100ls/",
+                "preorder_btn": "Learn More",
+                "preorder_link": "http://www.wilson.com/en-us/tennis/rackets/baseliner/burn/burn-100ls/",
+                "preorder_tag": "specs table pre-order 100ls"
+            },
+            {
+                "__id": "racket3",
+                "name": {
+                    "burn": "Burn",
+                    "model_num": "100<em>S</em>",
+                    "tag": "S"
+                },
+                "specs": [
+                    "超凡力量",
+                    "精准旋转效应科技",
+                    "产生更具攻击性和有力的击球"
+                ],
+                "age": "14周岁及以上",
+                "headsize": "100 / 645",
+                "weight": "10.7oz / 303g",
+                "balance": "33cm / 4 pts HL",
+                "pattern": "18 x 16",
+                "linkout": "http://www.wilson.com/en-us/tennis/rackets/baseliner/burn/burn-100s/",
+                "preorder_btn": "Pre-Order",
+                "preorder_link": "http://www.wilson.com/en-us/tennis/rackets/baseliner/burn/burn-100s/",
+                "preorder_tag": "specs table pre-order 100s"
+            },
+            {
+                "__id": "racket4",
+                "name": {
+                    "burn": "Burn",
+                    "model_num": "100",
+                    "tag": " "
+                },
+                "specs": [
+                    "强大力量和表现",
+                    "平行线孔",
+                    "舒适手感和控制"
+                ],
+                "age": "16周岁",
+                "headsize": "100 / 645",
+                "weight": "10.7oz / 303g",
+                "balance": "33cm / 4 pts HL",
+                "pattern": "16 x 19",
+                "linkout": "http://www.wilson.com/en-us/tennis/rackets/baseliner/burn/burn-100/",
+                "preorder_btn": "Pre-Order",
+                "preorder_link": "http://www.wilson.com/en-us/tennis/rackets/baseliner/burn/burn-100/",
+                "preorder_tag": "specs table pre-order 100"
+            }
+        ]
+    },
+    "team_burn": {
+        "introducing": "介绍 Team Burn",
+        "team_burn": "Team Burn",
+        "expand": "查看更多回答",
+        "collapse": "收起",
+        "next_player": "下一位球员",
+        "previous_player": "前一位球员",
+        "legal": "职业球员经常定制他们使用的球拍。球员代言的市售球拍参数可能与球员比赛所用球拍不同。",
+        "players": [
+            [
+                {
+                    "__id": "kei",
+                    "__tracking": {
+                        "tag": "kei profile view",
+                        "type": "image link"
+                    },
+                    "images": {
+                        "headshot": "/burn/images/Phase2/kei-headshot.jpg",
+                        "thumb_active": "/burn/images/Phase2/team-kei-thumbnail-active.jpg",
+                        "thumb_inactive": "/burn/images/Phase2/team-kei-thumbnail-inactive.jpg"
+                    },
+                    "full_name": "锦织圭",
+                    "interview_data_height": "240",
+                    "interview": [
+                        {
+                            "q": "赛场外你最喜欢做什么事情?",
+                            "a": "放松、和朋友一起吃饭、打高尔夫、看电影。"
+                        },
+                        {
+                            "q": "你有什么特别的赛前仪式吗？和我们分享一下。",
+                            "a": "我会去一个安静地方试着让自己集中精神。"
+                        },
+                        {
+                            "q": "你最喜欢球拍的哪些方面？",
+                            "a": "力量和旋转。"
+                        },
+                        {
+                            "q": "你最喜欢的训练方式是怎样的？",
+                            "a": "好玩有趣的。我们一直保证训练是好玩有趣的。"
+                        },
+                        {
+                            "q": "每周你训练多少小时?",
+                            "a": "很多。大约每天6小时。"
+                        },
+                        {
+                            "q": "你几岁开始打网球？",
+                            "a": "5岁。"
+                        }
+                    ]
+                },
+                {
+                    "__id": "simona",
+                    "__tracking": {
+                        "tag": "simona profile view",
+                        "type": "image link"
+                    },
+                    "images": {
+                        "headshot": "/burn/images/Phase2/simona-headshot.jpg",
+                        "thumb_active": "/burn/images/Phase2/team-simona-thumbnail-active.jpg",
+                        "thumb_inactive": "/burn/images/Phase2/team-simona-thumbnail-inactive.jpg"
+                    },
+                    "full_name": "西蒙娜·哈勒普",
+                    "interview_data_height": "216",
+                    "interview": [
+                        {
+                            "q": "赛场外你最喜欢做什么事情？",
+                            "a": "我喜欢听音乐。"
+                        },
+                        {
+                            "q": "你有什么特别的赛前仪式吗？和我们分享一下。",
+                            "a": "比赛前我总是喜欢在我的球拍上绑上全新的吸汗带。"
+                        },
+                        {
+                            "q": "你最喜欢球拍的哪些方面？",
+                            "a": "我就是喜欢它。"
+                        },
+                        {
+                            "q": "你最喜欢的训练方式是怎样的？",
+                            "a": "比起健身房，我更喜欢在网球场上。"
+                        },
+                        {
+                            "q": "每周你训练多少小时？",
+                            "a": "每周大约17个小时。"
+                        },
+                        {
+                            "q": "你几岁开始打网球？",
+                            "a": "我四岁半的时候开始打网球。"
+                        }
+                    ]
+                }
+            ],
+            [
+                {
+                    "__id": "ernest",
+                    "__tracking": {
+                        "tag": "ernest profile view",
+                        "type": "image link"
+                    },
+                    "images": {
+                        "headshot": "/burn/images/Phase2/ernest-headshot.jpg",
+                        "thumb_active": "/burn/images/Phase2/team-ernest-thumbnail-active.jpg",
+                        "thumb_inactive": "/burn/images/Phase2/team-ernest-thumbnail-inactive.jpg"
+                    },
+                    "full_name": "厄内斯特·古尔比斯",
+                    "interview_data_height": "254",
+                    "interview": [
+                        {
+                            "q": "赛场外你最喜欢做什么事情？",
+                            "a": "我喜欢看书和听音乐，我还喜欢下棋！"
+                        },
+                        {
+                            "q": "你有什么特别的赛前仪式吗？和我们分享一下。",
+                            "a": "在比赛前1小时，我会和我的团队坐在一起谈论网球20分钟。然后我去更衣室做准备，开始为比赛集中精神。"
+                        },
+                        {
+                            "q": "你最喜欢球拍的哪些方面？",
+                            "a": "它总是能带给我一样的手感，控制我的火爆脾气。"
+                        },
+                        {
+                            "q": "你最喜欢的训练方式是怎样的？",
+                            "a": "选择一种击球方式练习100次。"
+                        },
+                        {
+                            "q": "每周你训练多少小时？",
+                            "a": "一个完整的训练周20-25小时在球场上。"
+                        },
+                        {
+                            "q": "你几岁开始打网球？",
+                            "a": "7岁。"
+                        }
+                    ]
+                },
+                {
+                    "__id": "pablo",
+                    "__tracking": {
+                        "tag": "pablo profile view",
+                        "type": "image link"
+                    },
+                    "images": {
+                        "headshot": "/burn/images/Phase2/pablo-headshot.jpg",
+                        "thumb_active": "/burn/images/Phase2/team-pablo-thumbnail-active.jpg",
+                        "thumb_inactive": "/burn/images/Phase2/team-pablo-thumbnail-inactive.jpg"
+                    },
+                    "full_name": "帕布罗·卡雷诺布斯塔",
+                    "interview_data_height": "192",
+                    "interview": [
+                        {
+                            "q": "赛场外你最喜欢做什么事情？",
+                            "a": "利用闲暇时间和朋友在一起玩其他运动，或者看电视比赛。"
+                        },
+                        {
+                            "q": "你有什么特别的赛前仪式吗？和我们分享一下。",
+                            "a": "我准备自己的球拍，做热身运动，只有等到最后时刻我才会和教练或者其他人说话。"
+                        },
+                        {
+                            "q": "你最喜欢球拍的哪些方面？",
+                            "a": "我真的很喜欢它的外观，比我之前的球拍颜色更靓丽。"
+                        },
+                        {
+                            "q": "你最喜欢的训练方式是怎样的？",
+                            "a": "我喜欢竞技，所以我最喜欢的训练就是和另外一个选手比赛。"
+                        },
+                        {
+                            "q": "每周你训练多少小时？",
+                            "a": "每天2小时网球训练和2小时体能训练，所以总共20小时。"
+                        },
+                        {
+                            "q": "你几岁开始打网球？",
+                            "a": "我6岁开始打网球。"
+                        }
+                    ]
+                }
+            ]
+        ]
+    },
+    "connect": {
+        "world_premier": "The World's Premier",
+        "baseliner_collective": "Baseliner Collective",
+        "show_the_world": "向世界展示你如何在球场选择最炙手可热的新款球拍风“烧”底线 #<em>Burn</em>THE<em>Baseline</em>"
+    }
+}

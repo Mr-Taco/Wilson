@@ -1,0 +1,110 @@
+block header
+
+    a#logo-link(href="#{__('navigation.logo_link')}" target='_blank')
+        img#header-logo.left(src='/burn/images/Phase2/white-wilson-logo.png' data-scrollto="home")
+        img#header-logo-mobile.left(src='/burn/images/Phase2/white-wilson-logo-mobile.png' data-scrollto="home")
+
+    #nav-wrapper
+        ol#nav
+            li
+                a#nav-home.link.active(href='#' data-scrollto="home") #{__("navigation.home")}
+            li
+                a#nav-specs.link(href='#' data-scrollto="specs") #{__("navigation.specs")}
+            if locals.locale === 'en-us'
+                li
+                    a#nav-burn-challenge.link(href='#' data-scrollto="burn-challenge") #{__("navigation.burn-challenge")}
+            li
+                a#nav-team-burn.link(href='#' data-scrollto="team-burn") #{__("navigation.team_burn")}
+            li
+                a#nav-connect.link(href='#' data-scrollto="connect") #{__("navigation.connect")}
+            li
+                a#nav-select <img class="current-flag #{__('navigation.country')}" src="#{__('navigation.flag')}" /> <i class="fa fa-angle-up"></i>
+                    .localization-wrapper(class="#{__('navigation.country')}")
+                        .current-language(class="#{__('navigation.country')}")
+                        .language-list
+                            p #{__("navigation.change_region")}
+                            span.country
+                                img.flag(src="/burn/images/Phase2/flag-usa.jpg")
+                                p.country(data-country="en-us") English (USA)
+                            span.country
+                                img.flag(src="/burn/images/Phase2/flag-gb.jpg")
+                                p.country(data-country="en-gb") English (INTL)
+                            span.country
+                                img.flag(src="/burn/images/Phase2/flag-fr.jpg")
+                                p.country(data-country="fr-fr") French
+                            span.country
+                                img.flag(src="/burn/images/Phase2/flag-de.jpg")
+                                p.country(data-country="de-de") German
+                            span.country
+                                img.flag(src="/burn/images/Phase2/flag-chi.jpg")
+                                p.country(data-country="zh-ch") Mandarin
+                            span.country
+                                img.flag(src="/burn/images/Phase2/flag-es.jpg")
+                                p.country(data-country="es-es") Spanish
+                            span.country
+                                img.flag(src="/burn/images/Phase2/flag-it.jpg")
+                                p.country(data-country="it-it") Italian
+                            span.country
+                                img.flag(src="/burn/images/Phase2/flag-jap.jpg")
+                                p.country(data-country="jp-jp") Japanese
+            li(class='btn #{__("navigation.country")}')
+                 a#nav-preorder.btn(href='#{__("navigation.preorder_link")}' target="_blank" data-ga-tag='#{__("navigation.preorder_tag")}' data-ga-type="button") #{__("navigation.buy_now")}
+            li
+                img.share-icon(src='/burn/images/Phase2/white-share-icon.png')
+            li
+                a#header-share-fb(href="https://www.facebook.com/WilsonTennis" target="_blank")
+                    i.fa.fa-facebook
+            li
+                a#twitter-share(href="#" target="_blank")
+                    i.fa.fa-twitter
+
+        img#mobile-nav-icon(src='/burn/images/Phase2/white-nav-icon.png')
+        img#mobile-nav-close(src='/burn/images/Phase2/white-close-icon.png')
+
+
+    #mobile-nav-wrapper(class='btn #{__("navigation.country")}')
+        .container
+            ol#mobile-nav
+                li
+                    a#mobile-nav-home(href='#' data-scrollto="home") #{__("navigation.home")}
+                li
+                    a#mobile-nav-specs(href='#' data-scrollto="specs") #{__("navigation.specs")}
+                if locals.locale === 'en-us'
+                    li
+                        a#mobile-nav-burn-challenge(href='#' data-scrollto="burn-challenge") #{__("navigation.burn-challenge")}
+                li
+                    a#mobile-nav-team-burn(href='#' data-scrollto="team-burn") #{__("navigation.team_burn")}
+                li
+                    a#mobile-nav-connect(href='#' data-scrollto="connect") #{__("navigation.connect")}
+
+            a#mobile-nav-preorder(class='btn #{__("navigation.country")}' href='#{__("navigation.preorder_link")}' target="_blank" data-ga-tag='#{__("navigation.preorder_tag")}' data-ga-type="button") #{__("navigation.buy_now")}
+
+            #change-region-wrapper
+                p #{__("navigation.change_region")}
+
+                span.country
+                    img.flag(src="/burn/images/Phase2/flag-usa.jpg")
+                    p.country(data-country="en-us") English (USA)
+                span.country
+                    img.flag(src="/burn/images/Phase2/flag-gb.jpg")
+                    p.country(data-country="en-gb") English (INTL)
+                span.country
+                    img.flag(src="/burn/images/Phase2/flag-fr.jpg")
+                    p.country(data-country="fr-fr") French
+                span.country
+                    img.flag(src="/burn/images/Phase2/flag-de.jpg")
+                    p.country(data-country="de-de") German
+                span.country
+                    img.flag(src="/burn/images/Phase2/flag-chi.jpg")
+                    p.country(data-country="zh-ch") Mandarin
+                span.country
+                    img.flag(src="/burn/images/Phase2/flag-es.jpg")
+                    p.country(data-country="es-es") Spanish
+                span.country
+                    img.flag(src="/burn/images/Phase2/flag-it.jpg")
+                    p.country(data-country="it-it") Italian
+                span.country
+                    img.flag(src="/burn/images/Phase2/flag-jap.jpg")
+                    p.country(data-country="jp-jp") Japanese
+
+

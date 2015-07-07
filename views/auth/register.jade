@@ -1,0 +1,14 @@
+
+extends ../layout
+
+block body
+  if errors
+      for error in errors
+          error
+
+  form(role="form", action="/auth/local/register", method="post")
+    input(type="hidden", name="_csrf", placeholder="#{_csrf}")
+    input(type="text", name="username", placeholder="Username")
+    input(type="text", name="email", placeholder="Email")
+    input(type="password", name="password", placeholder="Password")
+    button(type="submit") Sign up

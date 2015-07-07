@@ -1,0 +1,311 @@
+.de-de
+    section#specs
+        #specs-content
+            #specs-headline
+                .bottom
+                    width: 200%
+                    margin-left: -54%
+                    line-height: 61px
+                    
+        #racket-fallback
+            .pagination
+                top: 795px
+                
+            .swipe-for-more
+                top: 815px
+
+            @media(min-width:950px)
+                .pagination
+                    top: 875px
+                    
+                .swipe-for-more
+                    top: 900px
+
+        @media(max-width:680px)
+            #specs-content
+                #specs-headline
+                    width: 75%
+                    
+                    .bottom
+                        width: 100%
+                        font-size: 33px
+                        line-height: 35px
+                        margin: 0 auto
+
+                #specs-btn-wrapper
+                    a#see-more-specs
+                        display: none
+                        
+            #desktop-racket-fallback
+                .swiper-slide
+                    text-align: center
+                
+                img
+                    max-width: 300px
+                    margin: 0 auto
+                    
+                    span.desktop
+                        display: none
+                        
+                    span.mobile
+                        display: inline
+                        
+            #racket-fallback
+                .pagination
+                    top: 405px
+                    
+                .swipe-for-more
+                    top: 425px
+                    
+                @media(min-width:950px)
+                    .pagination
+                        top: 445px
+                        
+                    .swipe-for-more
+                        top: 465px
+
+
+        #specs-table-wrapper
+            width: 100%
+            max-width: 1024px
+            margin: 0 auto
+            position: absolute
+            top: 1540px
+            left: 0
+            right: 0
+
+            @media(max-width:680px)
+                top: 775px
+
+            a#close-table
+                width: 42px
+                height: 42px
+                float: right
+                background: url('../images/Phase2/specs-table-close-btn.png')
+
+                @media(max-width:680px)
+                    display: none
+
+            table#specs-table
+                width: 95%
+                margin: 0 auto
+
+                tr
+                    width: 100%
+
+                    &.ages:hover, &.headsize:hover, &.weight:hover, &.balance:hover, &.pattern:hover
+                        &:hover
+                            background: darkgray
+
+                    &.names
+                        p
+                            font-family: BentonSansComp
+                            font-size: 28px
+                            color: white
+
+                            em
+                                color: gray
+
+                            &.orange
+                                font-family: BentonSansComp-Bold
+                                font-size: 36px
+                                color: orange
+                                text-transform: uppercase
+
+                        @media(max-width:999px)
+                            p
+                                font-size: 24px
+
+                                &.orange
+                                    font-size: 32px
+
+                    &.specs
+                        p
+                            font-family: BentonSansComp-Book
+                            font-size: 18px
+                            color: white
+                            display: list-item
+                            list-style-image: url('../images/Phase2/white-cross.png')
+                            margin-left: 15px
+
+                        @media(max-width:999px)
+                            p
+                                font-family: BentonSansComp-Book
+                                font-size: 14px
+
+                    &.ages
+                        text-transform: none
+
+                    &.pre-order
+                        td
+                            text-align: center
+
+                    td, th
+                        font-family: BentonSansComp
+                        font-size: 22px
+                        color: white
+                        border-left: 2px dotted gray
+                        padding: 15px
+                        width: 16.666667%
+                        box-sizing: border-box
+
+                        &:first-child
+                            font-family: BentonSansComp-Medium
+                            font-size: 22px
+                            color: gray
+                            text-transform: uppercase
+                            border-left: none
+
+                        a.orange-btn
+                            font-family: BentonSansComp
+                            font-size: 13px
+                            color: white
+                            padding: 10px
+                            background: orange
+                            text-transform: uppercase
+                            text-decoration: none
+                            transition: background .35s ease-in-out
+
+                            &:hover
+                                background: #999999
+
+                        @media(max-width:999px)
+                            font-size: 19px
+
+                            &:first-child
+                                font-size: 19px
+
+                            a.orange-btn
+                                font-size: 11px
+
+                @media(max-width:680px)
+                    display: none
+
+            p#mobile-specs-blurb
+                font-family: BentonSansExtraComp
+                font-size: 21px
+                color: #aeaeae
+                text-transform: uppercase
+                display: none
+                padding-left: 6%
+
+                @media(max-width:680px)
+                    display: block
+
+            #mobile-specs-gallery
+                height: 400px
+                display: none
+
+                @media(max-width:680px)
+                    display: block
+
+                #mobile-specs-container
+                    display: none
+
+                .racket-container
+                    height: auto
+                    width: 100%
+                    padding: 10px 1.5%
+                    box-sizing: border-box
+
+                    .racket-name
+                        font-family: BentonSansExtraComp
+                        font-size: 36px
+                        text-transform: uppercase
+                        color: white
+                        margin-bottom: 10px
+
+                        em
+                            color: orange
+
+                            &:nth-child(even)
+                                color: lightgray
+
+                    .trait
+                        display: list-item
+                        color: white
+                        font-family: BentonSansComp
+                        font-size: 16px
+                        margin: 0 0 0 7%
+
+                    .stat-wrapper
+                        width: 50%
+                        display: inline-block
+                        box-sizing: border-box
+                        margin: 0
+                        margin-top: 20px
+
+                    .stat-title
+                        font-family: BentonSansComp-Bold
+                        font-size: 17px
+                        line-height: 20px
+                        color: lightgray
+                        text-transform: uppercase
+
+                    .stat
+                        font-family: BentonSansComp
+                        font-size: 17px
+                        color: white
+                        text-transform: uppercase
+
+                    .pre-order
+                        display: block
+                        font-family: BentonSansComp
+                        color: white
+                        text-transform: uppercase
+                        background-color: orange
+                        width: 90%
+                        margin: 30px auto
+                        padding: 20px 0
+                        text-align: center
+                        text-decoration: none
+
+                .pagination
+                    position: absolute
+                    top: 350px
+                    left: 0
+                    right: 0
+                    text-align: center
+
+                    .swiper-pagination-switch
+                        width: 15px
+                        height: 15px
+                        border-radius: 50px
+                        background-color: white
+                        margin: 0 10px
+                        display: inline-block
+
+                    .swiper-active-switch
+                        background-color: orange
+                        
+                .swipe-for-more
+                    top: 385px
+
+
+    @import "racket-de.styl"
+
+
+    p.swipe-for-more
+        font-family: BentonSansComp
+        color: lightgray
+        font-size: 12px
+        margin: 10px 0
+        text-align: center
+        position: absolute
+        top: 455px
+        left: 0
+        right: 0
+        display: none
+
+        i
+            font-size: 16px
+            margin: 0 8px
+            color: white
+
+    .pagination span
+        cursor: pointer
+
+
+
+
+

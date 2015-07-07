@@ -1,0 +1,26 @@
+
+- var text = data.get('text')
+- var length = text.length
+- var id_string = data.get('id_str')
+- var user_id = data.get('user').id_str 
+
+if data.get('id_str') !== undefined
+    - var url = 'http://twitter.com/' + data.get('user').id_str + '/status/' + data.get('id_str')
+else
+    - var url = "https://t.co/" + text.substring((length - 10), (length))
+
+
+.item(data-date="#{data.get('date')}" data-id="#{data.get('post_id')}"  data-type="#{data.get('post_type') }")
+    a(href=url target="_blank")
+        .twitter.text-post
+            .img
+                img(src='#{data.get("user").profile_image_url}')
+            .quote
+                p
+                    em.open-quote &ldquo;
+                    span.post-body !{data.get("text")}
+                    em.close-quote &rdquo;
+            .signature
+                p.username @#{data.get("user").name}
+                p.date #{moment(data.get("date")).fromNow()}
+

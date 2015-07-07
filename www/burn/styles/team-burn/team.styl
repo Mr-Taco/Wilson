@@ -1,0 +1,369 @@
+
+section#team-burn
+    height: 767px
+    width: 100%
+
+    #team-burn-wrapper
+        position: relative
+        width: 100%
+        // max-width: 1024px
+        height: 100%
+        overflow: hidden
+        margin: 0 auto
+
+        p#mobile-headline
+            display: none
+
+    .player
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        // max-width: 1024px
+        height: 100%
+        z-index: -5
+        opacity: 0
+        background-size: cover
+        transform: matrix(1.5, 0, 0, 1.5, 0, 0)
+
+        &.top
+            opacity: 1
+            z-index: 6
+            transform: matrix(1, 0, 0, 1, 0, 0)
+
+        &#kei
+            background: url('../images/Phase2/team-kei-bg.jpg')
+            background-position: bottom left
+            background-repeat: no-repeat
+            background-size: cover
+
+        &#simona
+            background: url('../images/Phase2/team-simona-bg.jpg')
+            background-position: 60% 0
+            background-repeat: no-repeat
+            background-size: cover
+
+        &#ernest
+            background: url('../images/Phase2/team-ernest-bg.jpg')
+            background-position: 60% 0%
+            background-repeat: no-repeat
+            background-size: cover
+
+        &#pablo
+            background: url('../images/Phase2/team-pablo-bg.jpg')
+            background-position: 60% 0%
+            background-repeat: no-repeat
+            background-size: cover
+
+        &#holly
+            background: url('../images/Phase2/team-holly-bg.jpg')
+            background-position: 95% 0%
+            background-repeat: no-repeat
+            background-size: cover
+
+        &#tereza
+            background: url('../images/Phase2/team-tereza-bg.jpg')
+            background-position: 90% 0%
+            background-repeat: no-repeat
+            background-size: cover
+
+        &#ethan
+            background: url('../images/Phase2/team-ethan-bg.jpg')
+            background-position: 68% 0%
+            background-repeat: no-repeat
+            background-size: cover
+
+    .content-wrapper
+        width: 100%
+        height: 100%
+        position: relative
+        max-width: 1024px
+        margin: 0 auto
+
+        .player-content-wrapper
+
+            .player-content
+                z-index: 500
+                height: auto
+
+
+    #team-burn-content, .player-content
+        width: 330px
+        height: 640px
+        position: absolute
+        top: 90px
+        right: 50px
+        text-align: left
+        // z-index: 5
+
+        @media(max-width:680px)
+            height: auto
+
+    #team-burn-content
+        z-index: 6
+
+    .player-content
+        top: 113px
+        z-index: 5
+
+        .responses
+            z-index: 100
+            border: none
+
+    .headline, .player-name
+        margin-bottom: 24px
+
+        h1
+            font-family: BentonSansExtraComp-Bold
+            font-size: 48px
+            color: white
+            margin-top: 4px
+            text-transform: uppercase
+            -webkit-font-smoothing: antialiased;
+
+        h2
+            font-family: BentonSansExtraComp-Bold
+            font-size: 26px
+            color: red
+            text-transform: uppercase
+            margin-bottom: 75px
+            -webkit-font-smoothing: antialiased;
+
+        img.headshot
+            display: none
+
+        img.angle-expand
+            display: none
+
+    .responses
+        height: 192px
+        overflow: hidden
+        position: relative
+        border-bottom: 1px solid red
+
+        p
+            font-family: BentonSansComp
+            font-size: 17px
+            line-height: 20px
+            color: red
+            -webkit-font-smoothing: antialiased;
+
+            &:nth-child(even)
+                color: white
+                margin-bottom: 24px
+
+    a#toggle-more-less, a#prev-member, a#next-member
+        font-family: BentonSansComp
+        font-size: 12px
+        line-height: 20px
+        color: white
+        text-transform: uppercase
+        transition: color .35s ease-in-out
+        position: relative
+        top: 15px
+        z-index:100000
+
+        span.collapse
+            display:none
+
+        &:hover
+            color: gray
+
+        i.fa-th
+            position: relative
+            margin-right 7px
+            top: 5px
+            font-size: 24px
+
+    a#prev-member, a#next-member
+        display: none
+        margin: 0 10px
+
+        &.visible
+            display: inline-block
+
+        i
+            margin: 0 5px
+
+    #the-team
+        position: absolute
+        bottom: 0
+
+        .member
+            float: left
+            position: relative
+
+            &.large
+                img
+                    width: 152px
+                    height: 91px
+                    margin-right: 10px
+                    cursor: pointer
+
+                    &.active
+                        z-index: -2
+                        opacity: 0
+                        position: absolute
+                        left: 0
+
+                    &.selected
+                        opacity: 1 !important
+                        z-index: 2 !important
+
+            &.small
+                cursor: pointer
+
+                &:nth-child(1)
+                    margin: 0 5px 0 50px
+
+                &:nth-child(2)
+                    margin: 0 0px 0 5px
+
+                &.noclick
+                    pointer-events: none
+
+                img
+                    width: 100px
+                    height: 60px
+                    margin-right: 5px
+
+                    &.active
+                        z-index: -2
+                        opacity: 0
+                        position: absolute
+                        left: 0
+
+                    &.selected
+                        opacity: 1 !important
+                        z-index: 2 !important
+
+            p.member-name
+                font-family: Arial
+                font-size: 11px
+                line-height: 24px
+                color: white
+                text-align: center
+
+                @media(min-width: 681px)
+                    margin-right: 5px
+
+    @media(max-width:680px)
+        height: auto
+
+        #team-burn-wrapper
+            background-color: black
+
+            p#mobile-headline
+                font-family: BentonSansExtraComp-Bold
+                font-size: 40px
+                width: 100%
+                text-align: center
+                display: block
+                color: white
+                padding: 40px 0
+                text-transform: uppercase
+
+        .player
+            position: static
+            width: 100%
+            height: auto
+            background-size: cover
+            z-index: 1
+            opacity: 1
+            transform: matrix(1, 0, 0, 1, 0, 0)
+
+            &.top
+                z-index: 5
+
+            &:nth-child(odd)
+                background-color: #191919 !important
+                background-image: none !important
+
+            &:nth-child(even)
+                background-color: #121212 !important
+                background-image: none !important
+
+
+        #team-burn-content
+            display: none
+
+        .player-content
+            width: auto
+            position: static
+            text-align: left
+            z-index: 5
+
+        .headline, .player-name
+            margin-bottom: 0
+            pointer-events: none
+
+            h1
+                font-size: 24px
+                line-height: 83px
+                pointer-events: none
+                margin-top: 0
+                padding-top: 4px
+
+            h2
+                display: none
+
+            img.headshot
+                width: 70px
+                height: 70px
+                border-radius: 50px
+                border: 2px solid #1e1e1e
+                display: block
+                margin: 5px 20px 0 10px
+                margin-right: 20px
+                float: left
+
+            img.angle-expand
+                display: block
+                position: absolute
+                top: 34px
+                right: 10px
+                height: 16px
+
+        .responses
+            height: 0px
+            overflow: hidden
+            width: 90%
+            margin: 0 auto
+            transition: height .35s ease-in-out
+
+            p
+                font-size: 17px
+                line-height: 20px
+
+        a#toggle-more-less
+            display: none
+
+        #the-team
+            display: none
+
+
+p#team-burn-legal
+    font-family: BentonSansComp
+    font-size: 12px
+    color: #c2c2c2
+    position: absolute
+    bottom: 20px
+    left: 25px
+    z-index: 5000
+    letter-spacing: 0
+
+    @media(max-width:680px)
+        display: none
+
+    @media(min-width: 681px)
+        max-width: 280px
+
+    @media(min-width: 760px)
+        max-width: 365px
+
+    @media(min-width: 950px)
+        max-width: 400px
+
+    @media(min-width: 1020px)
+        max-width: 600px
+

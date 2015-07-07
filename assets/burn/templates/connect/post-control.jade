@@ -1,0 +1,13 @@
+
+- var approved = data.get("approved")
+- var featured = data.get("featured")
+
+.post-control
+   .checkbox.approve
+      label
+         input(type="checkbox", name="approved" , checked=(approved == true ? "checked" : undefined) )
+         span Approved
+   .checkbox.feature
+      label
+         input(type="checkbox" name="featured" , checked=(featured == true ? "checked" : undefined))
+         span Featured

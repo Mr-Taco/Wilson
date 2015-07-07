@@ -1,0 +1,297 @@
+extends layout
+
+
+block body
+
+    #content
+        section#home.section
+            //if locals.locale === 'es-es' || locals.locale === 'fr-fr' || locals.locale === 'de-de'
+            //    #home-content
+            //        img#tennis-player-bg(src='/burn/images/Phase2/tennis-player-bg.png')
+            //
+            //        p.medium #{__("marquee.introducing")}
+            //        p.large  #{__("marquee.the_burn")}
+            //        p.sub-text #{__("marquee.next_generation")}
+            //
+            //        p.available-soon #{__("marquee.available_soon")}
+            //        a#pre-order(href="#{__('marquee.notify_me.link')}" target="_blank" data-ga-tag="hero notify" data-ga-type="button") #{__("marquee.notify_me.text")}
+            //        a#mobile-pre-order(href="#{__('marquee.notify_me.link')}" target="_blank" data-ga-tag="hero notify" data-ga-type="button") #{__("marquee.notify_me.mobile_text")}
+            //        img#scroll-to-learn(src="#{__('marquee.scroll_image')}" data-scrollto="specs")
+            //
+            //else
+            #home-content-video
+                include partials/video
+
+        section#specs.section
+            #specs-content
+                #specs-headline
+                    .top
+                        img(src='/burn/images/Phase2/white-w-logo.png')
+                    .bottom
+                        em #{__("specs.marquee.booming_power")}
+                        p #{__("specs.marquee.built")}
+
+                #specs-btn-wrapper
+                    a#see-more-specs(href='#' data-ga-tag="burn full line" data-ga-type="button") #{__("specs.see_full_line")}
+
+
+            #racket
+                .racket-specs-content
+                    .hotspot-content-container
+                        for hotspot in __("specs.hotspots")
+                            .hotspot-content(id="#{hotspot.__id}" data-id="#{hotspot.__data_id}" )
+                                .anchor
+                                p
+                                    <em>#{hotspot.headline}</em> <span>#{hotspot.body}</span>
+                                if(hotspot.list)
+                                    ul
+                                        !=hotspot.list
+
+
+
+
+                    .svg-container-under
+                        svg(xmlns="http://www.w3.org/2000/svg")
+                    .gl-container
+                    .svg-container-over
+                        svg(xmlns="http://www.w3.org/2000/svg")
+
+                #loader-container
+
+            #racket-fallback
+                #desktop-racket-fallback.swiper-container
+                    .swiper-wrapper
+
+                        for item in __("specs.gallery")
+                            .swiper-slide.racket-container
+                                img.desktop(src="#{item.desktop_image}")
+                                img.mobile(src="#{item.mobile_image}")
+
+
+                #desktop-racket-pagination.pagination
+
+                if locals.locale === 'jp-jp'
+                    p#desktop-swipe-for-more.swipe-for-more <i class='fa fa-arrow-left'></i> #{__("specs.view_more_features")}  <span class="desktop">#{__("specs.click")}</span><span class="mobile">#{__("specs.swipe")}</span><i class='fa fa-arrow-right'></i>
+                else
+                    p#desktop-swipe-for-more.swipe-for-more <i class='fa fa-arrow-left'></i><span class="desktop">#{__("specs.click")}</span><span class="mobile">#{__("specs.swipe")}</span> #{__("specs.view_more_features")} <i class='fa fa-arrow-right'></i>
+
+            #specs-table-wrapper
+                a#close-table(href='#')
+                table#specs-table
+                    tr.names
+                        th
+                        for racket in __("specs.specs_table")
+                            th
+                                p.orange #{racket.name.burn}
+                                p !{racket.name.model_num}
+
+                    tr.specs
+                        td
+                        for racket in __("specs.specs_table")
+                            td
+                                for point in racket.specs
+                                    p #{point}
+
+
+                    tr.ages
+                        td #{__("specs.specs_table_headers.ages")}
+                        for racket in __("specs.specs_table")
+                            td #{racket.age}
+
+
+                    tr.headsize
+                        td #{__("specs.specs_table_headers.headsize")}
+                        for racket in __("specs.specs_table")
+                            td #{racket.headsize}
+                    tr.weight
+                        td #{__("specs.specs_table_headers.weight")}
+                        for racket in __("specs.specs_table")
+                            td #{racket.weight}
+                    tr.balance
+                        td #{__("specs.specs_table_headers.balance")}
+                        for racket in __("specs.specs_table")
+                            td #{racket.balance}
+                    tr.pattern
+                        td #{__("specs.specs_table_headers.pattern")}
+                        for racket in __("specs.specs_table")
+                            td #{racket.pattern}
+
+
+                    tr.pre-order(class='btn #{__("navigation.country")}')
+                        td
+                        for racket in __("specs.specs_table")
+                            td
+                                a.orange-btn(href="#{racket.preorder_link}" target="_blank" data-ga-tag="#{racket.preorder_tag}" data-ga-type="button") #{racket.preorder_btn}
+
+                p#mobile-specs-blurb #{__("specs.explore_full_line")}
+                #mobile-specs-gallery
+                    #mobile-specs-container.swiper-container
+                        .swiper-wrapper
+
+                            for racket in __("specs.specs_table")
+                                .racket-container.swiper-slide(id="#{racket.__id}")
+                                    p.racket-name <em>#{racket.name.burn}</em>!{racket.name.model_num}
+                                    for point in racket.specs
+                                        p.trait #{point}
+
+                                    .stat-wrapper.age
+                                        p.stat-title #{__("specs.specs_table_headers.ages")}
+                                        p.stat #{racket.age}
+
+                                    .stat-wrapper
+                                        p.stat-title #{__("specs.specs_table_headers.headsize")}
+                                        p.stat #{racket.headsize}
+
+                                    .stat-wrapper
+                                        p.stat-title #{__("specs.specs_table_headers.weight")}
+                                        p.stat #{racket.weight}
+
+                                    .stat-wrapper
+                                        p.stat-title #{__("specs.specs_table_headers.balance")}
+                                        p.stat #{racket.balance}
+
+                                    .stat-wrapper
+                                        p.stat-title #{__("specs.specs_table_headers.pattern")}
+                                        p.stat #{racket.pattern}
+
+                                    a.orange-btn(class='btn #{__("navigation.country")}' href='#{racket.linkout}' target="_blank" data-ga-tag='specs table pre-order #{racket.name.tag}' data-ga-type="button") #{racket.btn_text}
+
+
+
+                    #mobile-specs-pagination.pagination
+
+                    if locals.locale === 'jp-jp'
+                        p.swipe-for-more <i class='fa fa-arrow-left'></i> #{__("specs.view_more_rackets")} <span class="desktop">#{__("specs.click")}</span><span class="mobile">#{__("specs.swipe")}</span> <i class='fa fa-arrow-right'></i>
+                    else
+                        p.swipe-for-more <i class='fa fa-arrow-left'></i><span class="desktop">#{__("specs.click")}</span><span class="mobile">#{__("specs.swipe")}</span> #{__("specs.view_more_rackets")} <i class='fa fa-arrow-right'></i>
+
+        if locals.locale === 'en-us'
+            section#burn-challenge.section
+                #burn-challenge-wrapper
+                    #burn-challenge-content
+                        h1 #{__("burn_challenge.challenge_headline")}
+                        p.global-competition #{__("burn_challenge.global_competition")}
+                        p.gocompete #{__("burn_challenge.go_compete")}
+                        a#check-schedule.desktop(href="#{__('burn_challenge.btn_url')}" target="_blank") #{__("burn_challenge.btn_text")}
+                        a#check-schedule-mobile.mobile(href="#{__('burn_challenge.btn_url')}" target="_blank") #{__("burn_challenge.btn_text_mobile")}
+
+
+        section#team-burn.section
+            #team-burn-wrapper
+                p#mobile-headline #{__("team_burn.introducing")}
+                - var i = 0
+                for row in __("team_burn.players")
+                    for player in row
+                        .player(id="#{player.__id}"  class=i == 0 ? "top" : "" data-index=i)
+                            .content-wrapper
+                                .player-content
+                                    .player-name
+                                        img.headshot(src="#{player.images.headshot}")
+                                        h1 #{player.full_name}
+                                        img.angle-expand(src='/burn/images/Phase2/gray-up-angle.png')
+                                    .responses.closed(data-height="#{player.interview_data_height}")
+                                        for qa in player.interview
+                                            p.question #{qa.q}
+                                            p.answer #{qa.a}
+                        - i++
+
+
+                .content-wrapper
+                    #team-burn-content
+                        .headline
+                            h2 #{__("team_burn.team_burn")}
+
+                        .responses.closed
+
+                        a#toggle-more-less(href="#")
+                            span.expand #{__("team_burn.expand")}
+                            span.collapse #{__("team_burn.collapse")}
+                        a#prev-member(href="#") <i class='fa fa-arrow-left'></i>#{__("team_burn.previous_player")}
+                        a#next-member(href="#") #{__("team_burn.next_player")} <i class='fa fa-arrow-right'></i>
+
+                        #the-team
+                            - var i = 0
+                            for row in __("team_burn.players")
+                                .row
+                                    for player in row
+                                        .member(id="#{player.__id}-thumbnail" class=i < 2 ? "large" : "small" data-ga-tag="#{player.__tracking.tag}" data-ga-type="#{player.__tracking.type}" data-name="#{player.__id}")
+                                            img.inactive(src="#{player.images.thumb_inactive}")
+                                            img.active(class=i == 0 ? "selected" : "" src="#{player.images.thumb_active}")
+                                            p.member-name #{player.full_name}
+
+                                        - i++
+
+
+
+
+                            //-
+                                .row
+                                    .member.large#kei-thumbnail(data-ga-tag="kei profile view" data-ga-type="image link")
+                                        img.kei.inactive(src="/burn/images/Phase2/team-kei-thumbnail-inactive.jpg" data-name="kei")
+                                        img.kei.active.selected(src="/burn/images/Phase2/team-kei-thumbnail-active.jpg" data-name="kei")
+                                        p.member-name Kei Nishikori
+                                    .member.large#simona-thumbnail(data-ga-tag="simona profile view" data-ga-type="image link")
+                                        img.simona.inactive(src="/burn/images/Phase2/team-simona-thumbnail-inactive.jpg" data-name="simona")
+                                        img.simona.active(src="/burn/images/Phase2/team-simona-thumbnail-active.jpg" data-name="simona")
+                                        p.member-name Simona Halep
+                                .row
+                                    .member.small#ernest-thumbnail(data-ga-tag="ernest profile view" data-ga-type="image link")
+                                        img.ernest.inactive(src="/burn/images/Phase2/team-ernest-thumbnail-inactive.jpg" data-name="ernest")
+                                        img.ernest.active(src="/burn/images/Phase2/team-ernest-thumbnail-active.jpg" data-name="ernest")
+                                        p.member-name Ernests Gulbis
+                                    .member.small#pablo-thumbnail(data-ga-tag="pablo profile view" data-ga-type="image link")
+                                        img.pablo.inactive(src="/burn/images/Phase2/team-pablo-thumbnail-inactive.jpg" data-name="pablo")
+                                        img.pablo.active(src="/burn/images/Phase2/team-pablo-thumbnail-active.jpg" data-name="pablo")
+                                        p.member-name Pablo Carreno Busta
+                            //-     .member.small.noclick
+                            //-         img.enzo.inactive(src="/burn/images/Phase2/team-gray.jpg" data-name="enzo")
+                            //-         img.enzo.active(src="/burn/images/Phase2/team-gray.jpg" data-name="enzo")
+                            //-         p.member-name Enzo Couacaud
+                            //- .row
+                            //-     .member.small
+                            //-         img.holly.inactive(src="/burn/images/Phase2/team-gray.jpg" data-name="holly")
+                            //-         img.holly.active(src="/burn/images/Phase2/team-gray.jpg" data-name="holly")
+                            //-         p.member-name Holly Fisher
+
+                    p#team-burn-legal #{__("team_burn.legal")}
+
+        section#connect.section
+            #connect-content
+                #connect-headline
+                    .logo
+                        img(src='/burn/images/Phase2/the-burn-logo.png')
+
+                    //- p.mobile #{__("connect.world_premier")}
+                    //- p.mobile #{__("connect.baseliner_collective")}
+
+                    p.sub-text !{__("connect.show_the_world")}
+                    .social
+                        ol#social
+                            a(href="https://www.facebook.com/WilsonTennis" target="_blank" data-ga-tag="facebook" data-ga-type="button")
+                                li
+                                    img.inactive(src='/burn/images/Phase2/orange-fb-circ.png')
+                                    img.active(src='/burn/images/Phase2/gray-fb-circ.png')
+                            a(href="https://twitter.com/wilsontennis" target="_blank" data-ga-tag="twitter" data-ga-type="button")
+                                li
+                                    img.inactive(src='/burn/images/Phase2/orange-twitter-circ.png')
+                                    img.active(src='/burn/images/Phase2/gray-twitter-circ.png')
+                            a(href="http://instagram.com/wilsontennis" target="_blank" data-ga-tag="instagram" data-ga-type="button")
+                                li
+                                    img.inactive(src='/burn/images/Phase2/orange-instagram-circ.png')
+                                    img.active(src='/burn/images/Phase2/gray-instagram-circ.png')
+                            a(href="https://www.pinterest.com/wilsontennis/" target="_blank" data-ga-tag="pinterest" data-ga-type="button")
+                                li
+                                    img.inactive(src='/burn/images/Phase2/orange-pinterest-circ.png')
+                                    img.active(src='/burn/images/Phase2/gray-pinterest-circ.png')
+
+                #connect-masonry-wrapper
+                    #connect-masonry.row-fluid
+                        .shuffle_sizer
+
+                    //
+                        img#connect-load-icon(src='/burn/images/Phase2/connect-loading-icon.png')
+
+        canvas#webgl
+
+
+

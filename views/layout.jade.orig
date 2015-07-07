@@ -1,0 +1,129 @@
+doctype html
+
+html(class='#{deviceInfo} #{locale}' data-data="#{__('data_url')}")
+    head
+        title #{__("meta.title")}
+        // Viewport mobile tag for sensible mobile support
+        meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1")
+        meta(name="description", content="#{__('meta.description')}")
+        meta(name="keywords", content="#{__('meta.keywords')}")
+        meta(name="og:description", content="#{__('meta.description')}")
+        meta(name="og:title", content="#{__('meta.title')}")
+        meta(name="og:url", content="http://www.wilson.com/burn")
+        meta(name="og:image", content="http://www.wilson.com/burn/images/share/fb-share-img.jpg")
+
+        if locals.noIndex === true
+            meta(name="robots", content="NOINDEX,NOFOLLOW")
+            link(rel="canonical", href="http://wilson.com/burn")
+
+
+        // STYLES
+<<<<<<< HEAD
+        link(rel="stylesheet", href="burn/styles/importer.css")
+        link(rel="stylesheet", href="burn/styles/mediaelementplayer.css")
+        link(rel="stylesheet", href="burn/styles/vendor/font-awesome.css")
+        link(rel="stylesheet", href="burn/styles/vendor/shuffle.css")
+        link(rel="stylesheet", href="burn/styles/vendor/swiper.css")
+=======
+        link(rel="stylesheet", href="/burn/min/production.4278708.min.css")
+>>>>>>> b12cf936ec1b956134678139ab87ce4562844162
+        // STYLES END
+body
+    header
+        block header
+            include partials/header
+    block body
+    // TEMPLATES
+    
+    // TEMPLATES END
+    // SCRIPTS
+<<<<<<< HEAD
+    script(src="burn/js/dependencies/modernizr.js")
+    script(src="burn/js/dependencies/jquery-2.1.1.js")
+    script(src="burn/js/dependencies/underscore.js")
+    script(src="burn/js/dependencies/three.js")
+    script(src="burn/js/dependencies/three/OBJLoader.js")
+    script(src="burn/js/dependencies/TweenMax.js")
+    script(src="burn/js/dependencies/backbone.js")
+    script(src="burn/js/dependencies/fb-sdk.js")
+    script(src="burn/js/dependencies/gasp-ScrollToPlugin.js")
+    script(src="burn/js/dependencies/gsap-Draggable.js")
+    script(src="burn/js/dependencies/gsap-DrawSVGPlugin.js")
+    script(src="burn/js/dependencies/gsap-SplitText.js")
+    script(src="burn/js/dependencies/gsap-ThrowPropsPlugin.js")
+    script(src="burn/js/dependencies/hammer.js")
+    script(src="burn/js/dependencies/idangerous.swiper.js")
+    script(src="burn/js/dependencies/jQuery.succinct.js")
+    script(src="burn/js/dependencies/mediaelement-and-player.js")
+    script(src="burn/js/dependencies/packery.pkgd.min.js")
+    script(src="burn/js/dependencies/preloadjs-0.4.1.min.js")
+    script(src="burn/js/dependencies/widgets.js")
+    script(src="burn/js/application.js")
+=======
+    script(src="/burn/min/production.4278708.min.js")
+>>>>>>> b12cf936ec1b956134678139ab87ce4562844162
+    // SCRIPTS END
+    script.
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-168605-10', 'auto', {"name": "Wilson", "allowLinker": true});
+        ga('Wilson.require', 'displayfeatures');
+        ga('Wilson.send', 'pageview');
+        ga('create', 'UA-168605-2', 'auto', {name: "Tennis", "allowLinker": true});
+        ga('Tennis.require', 'displayfeatures');
+        ga('Tennis.send', 'pageview');
+        ga('create', 'UA-57135338-2', 'auto', {name: "Agency", "allowLinker": true});
+        ga('Agency.require', 'displayfeatures');
+        ga('Agency.send', 'pageview');
+
+
+    // Begin Omniture
+        //
+            SiteCatalyst code version: H.19.4.
+            Copyright 1997-2009 Omniture, Inc. More info available at
+            http://www.omniture.com
+    script(language='JavaScript', type='text/javascript', src='http://www.wilson.com/v2/js/s_code.js')
+    script(language='JavaScript', type='text/javascript').
+        s.prop31 = 'tennis';
+        s.eVar31 = 'tennis';
+        s.prop12 = "en";
+        s.channel = "tennis";
+        s.pageName="tennis";
+        s.prop7 = "Sport";
+        s.prop21 = "tennis";
+        s.prop12 = "en-us";
+        s.channel = "tennis";
+        s.eVar11 = "";
+        s.prop32 = "";
+        /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+        var s_code=s.t();if(s_code)document.write(s_code)
+
+    script(language='JavaScript', type='text/javascript').
+        if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\\!-'+'-');
+
+    noscript
+        iframe(src='//www.googletagmanager.com/ns.html?id=GTM-NNM3BJ', height='0', width='0', style='display:none;visibility:hidden')
+
+    script(language='JavaScript', type='text/javascript').
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(), event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                    '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NNM3BJ');
+

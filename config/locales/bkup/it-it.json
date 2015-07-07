@@ -1,0 +1,409 @@
+{
+    "data_url" : "/burn/data/it.json"
+    ,"meta": {
+        "title" : "The Burn from Wilson Tennis - Performance Rackets for Baseliners"
+        ,"description" : "Introducing The Burn - The Next Generation of Performance Rackets From Wilson Tennis"
+        ,"keywords" : "Wilson, Tennis, Burn Network, Burn the Baseline, Burn, Racket"
+    }
+    ,"navigation" : {
+        "home" : "HOME"
+        ,"specs" : "SPECIFICHE"
+        ,"team_burn" : "TEAM BURN"
+        ,"connect" : "CONNETTI"
+        ,"countries_list" : [
+            {"en-us" : ""}
+            ,{"en-gb" : ""}
+            ,{"fr-fr" : ""}
+            ,{"de-de" : ""}
+            ,{"it-it" : ""}
+            ,{"es-es" : ""}
+            ,{"es-la" : ""}
+        ]
+
+         ,"flag" : "/burn/images/Phase2/flag-it.jpg"
+         ,"change_region" : "CAMBIA REGIONE"
+         ,"country" : "it"
+         ,"preorder" : "Pre-Order"
+         ,"preorder_burn" : "Pre-Order The Burn"
+         ,"preorder_link" : "http://www.wilson.com/en-us/tennis/rackets/baseliner/burn/"
+         ,"preorder_tag" : "header pre-order"
+
+
+    }
+    ,"marquee": {
+        "introducing" : "INTRODUZIONE DI"
+        ,"the_burn" : "BURN"
+        ,"next_generation" : "LA NUOVA GENERAZIONE DI RACCHETTE PERFORMANTI WILSON TENNIS"
+        ,"available_soon" : " "
+        ,"notify_me" : {
+            "text" : "Notify Me"
+            ,"mobile_text" : "Available Soon. Click For Updates."
+            ,"link" : "http://www.wilson.com/en-us/tennis/rackets/baseliner/burn/"
+        }
+        ,"scroll_image" : "/burn/images/Phase2/white-scroll-to-learn.png"
+        ,"video_title" : "ROOFTOP"
+        ,"video_caption" : "kei nishikori tests the next generation of performance rackets"
+        ,"button" : {
+            "desktop" : "Buy Now"
+            ,"mobile" : "Available Soon. Click For Updates"
+        }
+    }
+    ,"specs" : {
+        "marquee" : {
+            "booming_power" : "POTENZA ED EFFETTO ESPLOSIVO"
+            ,"built" : "PER GIOCATORI DA FONDO CAMPO"
+        }
+        ,"hotspots" : [
+            {
+                "__id" : "content-rounded-hoop"
+                ,"__data_id" : "rounded-hoop"
+                ,"headline" : "L'arco Arrotondato"
+                ,"body" : "aumenta la zona di contatto per rotazioni verticali aggressive."
+            }
+            ,{
+                "__id" : "content-spin-effect"
+                ,"__data_id" : "spin-effect"
+                ,"headline" : "La Tecnologia Spin Effect "
+                ,"body" : "genera colpi potenti con il massimo controllo della palla."
+            }
+            ,{
+                "__id" : "content-x2-shaft"
+                ,"__data_id" : "x2-shaft"
+                ,"headline" : "Manico X2 "
+                ,"body" : "più lungo per migliorare la presa sul rovescio a due mani e dare una migliore sensazione per i cambiamenti estremi di impugnatura."
+            }
+            ,{
+                "__id" : "content-parallel-drilling"
+                ,"__data_id" : "parallel-drilling"
+                ,"headline" : "La Foratura Parallela"
+                ,"body" : "offre uno sweet-spot più ampio e permissivo."
+            }
+            ,{
+                "__id" : "content-carbon-fiber"
+                ,"__data_id" : "carbon-fiber"
+                ,"headline" : "La Fibra Di Carbonio A Prestazioni "
+                ,"body" : "elevate rende più rigido il telaio, per una potenza esplosiva."
+            }
+            ,{
+                "__id" : "content-sony-sensor"
+                ,"__data_id" : "sony-sensor"
+                ,"headline" : "Sony Sensor"
+                ,"body" : "Sony Sensor"
+            }
+
+
+        ]
+        ,"gallery" : [
+            {
+                "mobile_image" : "/burn/images/Phase2/mobile-racket-it-1.png"
+                ,"desktop_image" : "/burn/images/Phase2/desktop-racket-it-1.png"
+            }
+            ,{
+                "mobile_image" : "/burn/images/Phase2/mobile-racket-it-5.png"
+                ,"desktop_image" : "/burn/images/Phase2/desktop-racket-it-5.png"
+            }
+            ,{
+                "mobile_image" : "/burn/images/Phase2/mobile-racket-it-3.png"
+                ,"desktop_image" : "/burn/images/Phase2/desktop-racket-it-3.png"
+            }
+            ,{
+                "mobile_image" : "/burn/images/Phase2/mobile-racket-it-4.png"
+                ,"desktop_image" : "/burn/images/Phase2/desktop-racket-it-4.png"
+            }
+            ,{
+                "mobile_image" : "/burn/images/Phase2/mobile-racket-it-2.png"
+                ,"desktop_image" : "/burn/images/Phase2/desktop-racket-it-2.png"
+            }
+
+        ]
+        ,"see_full_line" : "GUARDA TUTTA LA LINEA DI MODELLI BURN"
+        ,"explore_full_line" : "Explore the Full Burn Line"
+        ,"swipe" : "Swipe"
+        ,"click" : "Click"
+        ,"view_more_features" : "to view more features"
+        ,"view_more_rackets" : "to view more rackets"
+        ,"specs_table_headers" : {
+            "ages":"ETÀ CONSIGLIATA"
+            ,"headsize" :"PIATTO CORDE"
+            ,"weight" : "PESO SENZA CORDE"
+            ,"balance":"BILANCIAMENTO SENZA CORDE"
+            ,"pattern":"SCHEMA CORDE"
+        }
+        ,"specs_table" : [
+            {
+                "__id" : "racket1"
+                ,"name" : {
+                    "burn" : "Burn"
+                    ,"model_num" : "100<em>ULS</em>"
+                    ,"tag": "ULS"
+                }
+                ,"specs" : [
+                    "La racchetta tecnica Spin Effect più leggera"
+                    ,"Rotazione senza sforzo"
+                    ,"Prestazioni e facilità di gioco"
+                ]
+                ,"age" : "A PARTIRE DA 10 ANNI"
+                ,"headsize" : "100 / 645"
+                ,"weight" : "9.3oz / 263g"
+                ,"balance" : "33.5cm / 3 pts HL"
+                ,"pattern" : "18 x 16"
+                ,"linkout" : "http://www.wilson.com/en-us/tennis/rackets/baseliner/burn/burn-100uls/"
+                ,"preorder_btn" : "Pre-Order"
+                ,"preorder_link" : "http://www.wilson.com/en-us/tennis/rackets/baseliner/burn/burn-100uls/"
+                ,"preorder_tag" : "specs table pre-order 100uls"
+            }
+            ,{
+                "__id" : "racket2"
+                ,"name" : {
+                    "burn" : "Burn"
+                    ,"model_num" : "100<em>LS</em>"
+                    ,"tag": "LS"
+                }
+                ,"specs" : [
+                    "Potenza leggera"
+                    ,"La tecnologia Spin Effect offre controllo sin dalla riga di fondo campo"
+                    ,"Manovrabile"
+                ]
+                ,"age" : "A PARTIRE DA 12 ANNI"
+                ,"headsize" : "100 / 645"
+                ,"weight" : "10oz / 283g"
+                ,"balance" : "33.5cm / 3 pts HL"
+                ,"pattern" : "18 x 16"
+                ,"linkout" : "http://www.wilson.com/en-us/tennis/rackets/baseliner/burn/burn-100ls/"
+                ,"preorder_btn" : "Learn More"
+                ,"preorder_link" : "http://www.wilson.com/en-us/tennis/rackets/baseliner/burn/burn-100ls/"
+                ,"preorder_tag" : "specs table pre-order 100ls"
+            }
+            ,{
+                "__id" : "racket3"
+                ,"name" : {
+                    "burn" : "Burn"
+                    ,"model_num" : "100<em>S</em>"
+                    ,"tag": "S"
+                }
+                ,"specs" : [
+                    "Potenza esplosiva"
+                    ,"Tecnologia Spin Effect di precisione"
+                    ,"Per colpi aggressivi e potenti"
+                ]
+                ,"age" : "A PARTIRE DA 14 ANNI"
+                ,"headsize" : "100 / 645"
+                ,"weight" : "10.7oz / 303g"
+                ,"balance" : "33cm / 4 pts HL"
+                ,"pattern" : "18 x 16"
+                ,"linkout" : "http://www.wilson.com/en-us/tennis/rackets/baseliner/burn/burn-100s/"
+                ,"preorder_btn" : "Pre-Order"
+                ,"preorder_link" : "http://www.wilson.com/en-us/tennis/rackets/baseliner/burn/burn-100s/"
+                ,"preorder_tag" : "specs table pre-order 100s"
+            }
+            ,{
+                "__id" : "racket4"
+                ,"name" : {
+                    "burn" : "Burn"
+                    ,"model_num" : "100"
+                    ,"tag": " "
+                }
+                ,"specs" : [
+                    "Potenza e prestazioni elevate"
+                    ,"Foratura parallela"
+                    ,"Feeling e controllo permissivo"
+                ]
+                ,"age" : "A PARTIRE DA 16 ANNI"
+                ,"headsize" : "100 / 645"
+                ,"weight" : "10.7oz / 303g"
+                ,"balance" : "33cm / 4 pts HL"
+                ,"pattern" : "16 x 19"
+                ,"linkout" : "http://www.wilson.com/en-us/tennis/rackets/baseliner/burn/burn-100/"
+                ,"preorder_btn" : "Pre-Order"
+                ,"preorder_link" : "http://www.wilson.com/en-us/tennis/rackets/baseliner/burn/burn-100/"
+                ,"preorder_tag" : "specs table pre-order 100"
+            }
+        ]
+
+
+    }
+    ,"team_burn" : {
+        "introducing" : "Introducing Team Burn"
+        ,"team_burn" : "Team Burn"
+        ,"expand" : "Expand"
+        ,"collapse" : "Collapse"
+        ,"next_player" : "Next Player"
+        ,"previous_player" : "Previous Player"
+        ,"legal" : "*I professionisti in genere personalizzano le loro racchette. Le specifiche delle racchette sui modelli approvati per il commercio possono variare rispetto ai modelli usati dai professionisti per giocare."
+        ,"players":
+        [
+            [
+                {
+                    "__id": "kei"
+                    ,"__tracking" : {
+                        "tag" : "kei profile view"
+                        ,"type" : "image link"
+                    }
+                    ,"images": {
+                        "headshot": "/burn/images/Phase2/kei-headshot.jpg",
+                        "thumb_active": "/burn/images/Phase2/team-kei-thumbnail-active.jpg",
+                        "thumb_inactive": "/burn/images/Phase2/team-kei-thumbnail-inactive.jpg"
+                    },
+                    "full_name": "Kei Nishikori",
+                    "interview_data_height": "194",
+                    "interview": [
+                        {
+                            "q": "Cosa ti piace fare fuori dal campo?",
+                            "a": "Rilassarmi, cenare con amici, giocare a golf, andare al cinema."
+                        },
+                        {
+                            "q": "Hai un tuo rituale prima di giocare? Raccontacelo.",
+                            "a": "Vado in un posto silenzioso a cercare di concentrarmi."
+                        },
+                        {
+                            "q": "Cos'è che preferisci della tua racchetta?",
+                            "a": "La potenza e l'effetto che imprime alla palla."
+                        },
+                        {
+                            "q": "Che tipo di allenamento preferisci?",
+                            "a": "Mi piace divertirmi. Cerchiamo sempre di fare in modo che l'allenamento sia divertente."
+                        },
+                        {
+                            "q": "Quante ore alla settimana ti alleni?",
+                            "a": "Molte. Anche 6 ore al giorno."
+                        },
+                        {
+                            "q": "A che età hai iniziato a giocare a tennis?",
+                            "a": "A 5 anni."
+                        }
+                    ]
+                },
+                {
+                    "__id": "simona"
+                    ,"__tracking" : {
+                        "tag" : "simona profile view"
+                        ,"type" : "image link"
+                    }
+                    ,"images": {
+                        "headshot": "/burn/images/Phase2/simona-headshot.jpg",
+                        "thumb_active": "/burn/images/Phase2/team-simona-thumbnail-active.jpg",
+                        "thumb_inactive": "/burn/images/Phase2/team-simona-thumbnail-inactive.jpg"
+                    },
+                    "full_name": "Simona Halep",
+                    "interview_data_height": "200",
+                    "interview": [
+                        {
+                            "q": "Cosa ti piace fare fuori dal campo?",
+                            "a": "Mi piace ascoltare la musica."
+                        },
+                        {
+                            "q": "Hai un tuo rituale prima di giocare? Raccontacelo.",
+                            "a": "Prima della partita mi piace mettere sulla racchetta nuovi overgrip."
+                        },
+                        {
+                            "q": "Cos'è che preferisci della tua racchetta?",
+                            "a": "La adoro e basta."
+                        },
+                        {
+                            "q": "Che tipo di allenamento preferisci?",
+                            "a": "Preferisco allenarmi sul campo da tennis anziché in palestra."
+                        },
+                        {
+                            "q": "Quante ore alla settimana ti alleni?",
+                            "a": "Circa 17 ore alla settimana."
+                        },
+                        {
+                            "q": "A che età hai iniziato a giocare a tennis?",
+                            "a": "Ho iniziato a giocare a 4 anni e mezzo."
+                        }
+                    ]
+                }
+            ],
+            [
+                {
+                    "__id": "ernest"
+                    ,"__tracking" : {
+                        "tag" : "ernest profile view"
+                        ,"type" : "image link"
+                    }
+                    ,"images": {
+                        "headshot": "/burn/images/Phase2/ernest-headshot.jpg",
+                        "thumb_active": "/burn/images/Phase2/team-ernest-thumbnail-active.jpg",
+                        "thumb_inactive": "/burn/images/Phase2/team-ernest-thumbnail-inactive.jpg"
+                    },
+                    "full_name": "Ernests Gulbis",
+                    "interview_data_height": "192",
+                    "interview": [
+                        {
+                            "q": "Cosa ti piace fare fuori dal campo?",
+                            "a": "Leggere libri e ascoltare musica, ma mi piace anche giocare a scacchi!"
+                        },
+                        {
+                            "q": "Hai un tuo rituale prima di giocare? Raccontacelo.",
+                            "a": "Un'ora prima della partita mi siedo con la mia squadra per 20 minuti a parlare di qualsiasi cosa tranne che di tennis. Poi torno nello spogliatoio per prepararmi e concentrarmi sulla partita."
+                        },
+                        {
+                            "q": "Cos'è che preferisci della tua racchetta?",
+                            "a": "Posso contare sempre sul fatto che produce risultati sempre uguali e controlla la mia \"artiglieria.\""
+                        },
+                        {
+                            "q": "Che tipo di allenamento preferisci?",
+                            "a": "Rispondere a un colpo e ripetere per 100 volte."
+                        },
+                        {
+                            "q": "Quante ore alla settimana ti alleni?",
+                            "a": "20-25 ore su campo in una settimana a pieno ritmo."
+                        },
+                        {
+                            "q": "A che età hai iniziato a giocare a tennis?",
+                            "a": "A 7 anni."
+                        }
+                    ]
+                },
+                {
+                    "__id": "pablo"
+                    ,"__tracking" : {
+                        "tag" : "ernest profile view"
+                        ,"type" : "image link"
+                    }
+                    ,"images": {
+                        "headshot": "/burn/images/Phase2/pablo-headshot.jpg",
+                        "thumb_active": "/burn/images/Phase2/team-pablo-thumbnail-active.jpg",
+                        "thumb_inactive": "/burn/images/Phase2/team-pablo-thumbnail-inactive.jpg"
+                    },
+                    "full_name": "Pablo Carreno Busta",
+                    "interview_data_height": "256",
+                    "interview": [
+                        {
+                            "q": "Cosa ti piace fare fuori dal campo?",
+                            "a": "Passare tutto il mio tempo libero con gli amici a praticare altri sport o guardare lo sport in televisione."
+                        },
+                        {
+                            "q": "Hai un tuo rituale prima di giocare? Raccontacelo.",
+                            "a": "Preparo le racchette, faccio esercizi di riscaldamento e chiacchiero fino all'ultimo momento con il mio allenatore o con qualcuno vicino."
+                        },
+                        {
+                            "q": "Cos'è che preferisci della tua racchetta?",
+                            "a": "Mi piace molto il suo aspetto; è più colorata della mia ultima racchetta."
+                        },
+                        {
+                            "q": "Che tipo di allenamento preferisci?",
+                            "a": "Mi piace gareggiare; l'allenamento che preferisco è giocare contro altro giocatori."
+                        },
+                        {
+                            "q": "Quante ore alla settimana ti alleni?",
+                            "a": "2 ore di tennis e 2 ore di allenamento di resistenza al giorno, quindi 20 ore in totale."
+                        },
+                        {
+                            "q": "A che età hai iniziato a giocare a tennis?",
+                            "a": "Ho iniziato a giocare a 6 anni."
+                        }
+                    ]
+                }
+            ]
+        ]
+    }
+    ,"connect" : {
+        "world_premier" : "The World's Premier"
+        ,"baseliner_collective" : "Baseliner Collective"
+        ,"show_the_world" :"Mostra al mondo come bruciare la riga di fondo campo #<em>Burn</em>THE<em>Baseline</em> con la nuova racchetta più innovativa sul campo"
+
+    }
+
+}
+

@@ -1,0 +1,442 @@
+{
+    "baseUrl":"",
+    "cors":false,
+    "global":{
+
+    },
+    "assets":{
+
+    },
+    "social":{
+        "facebook":{
+            "title":"The All New Wilson Burn",
+            "caption":" ",
+            "description":"Check out the Burn, the hottest new racket on the court from Wilson Tennis. #BurnTheBaseline",
+            "image":"/burn/images/share/fb-share-img.jpg"
+        },
+        "twitter":{
+            "message":"Provate la Burn, la nuovissima racchetta di @WilsonTennis. #BurnTheBaseline"
+        }
+    },
+    "services":{
+        "csrf":"/csrfToken",
+        "login":"/auth/login",
+        "survey":"/api/survey",
+        "list":"/burn/api/connect/list"
+
+    },
+    "view":{
+        "racket3d":{
+            "copy" : {
+                "loading" : "CARICAMENTO",
+                "initializing" : "AVVIO DEL RENDER DELLA RACCHETTA 3D"
+            },
+            "assets": {
+                "loaderCta" : "/burn/images/3d/explore-it.png"
+            },
+            "objects":[
+                {
+                    "id":"burn-racket",
+                    "obj":[
+                        {
+                            "id":"handle-flange",
+                            "url":"/burn/3d/racket/handle/handle_flange.obj",
+                            "color":"#222222",
+                            "specular":"#333333",
+                            "shininess":0,
+                            "reflectivity":0
+                        },
+                        {
+                            "id":"handle-end",
+                            "url":"/burn/3d/racket/handle/handle_end.obj",
+                            "color":"#ff0000",
+                            "specular":"#f30000"
+                        },
+                        {
+                            "id":"handle",
+                            "url":"/burn/3d/racket/handle/handle.obj",
+                            "map":"/burn/3d/racket/handle/handle_bmp_04_COLOR.jpg",
+                            "normalMap":"/burn/3d/racket/handle/handle_bmp_04_NRM.jpg",
+                            "specularMap":"/burn/3d/racket/handle/handle_bmp_04_SPEC.jpg",
+                            "normalScale":[
+                                -2,
+                                -2
+                            ],
+                            "mapRepeat":[
+                                2,
+                                2
+                            ],
+                            "reflectivity":0,
+                            "shininess":25,
+                            "color":"#3d3d3d",
+                            "specular":"#3d3d3d"
+                        },
+                        {
+                            "id":"tape",
+                            "url":"/burn/3d/racket/handle/tape.obj",
+                            "color":"#000000",
+                            "specular":"#333333",
+                            "shininess":75,
+                            "reflectivity":0.3
+                        },
+                        {
+                            "id":"head",
+                            "url":"/burn/3d/racket/head/head.obj",
+                            "map":"/burn/3d/racket/head/racket-head-color-baked.jpg",
+                            "specularMap":"/burn/3d/racket/head/mattRacket_UV_005_SPEC.jpg",
+                            "color":"#f0f0f0",
+                            "specular":"#484848",
+                            "shininess":60,
+                            "reflectivity":0.5
+                        },
+                        {
+                            "id":"strings",
+                            "url":"/burn/3d/racket/strings/strings.obj",
+                            "map":"/burn/3d/racket/strings/strings.jpg",
+                            "specularMap":"/burn/3d/racket/strings/strings_spec.jpg",
+                            "shininess":20,
+                            "color":"#ffffff",
+                            "specular":"#ffffff"
+                        },
+                        {
+                            "id":"stitches",
+                            "url":"/burn/3d/racket/strings/stitch.obj",
+                            "shininess":50,
+                            "reflectivity":0.15,
+                            "color":"#121212",
+                            "specular":"#222222"
+                        },
+                        {
+                            "id":"string-holes",
+                            "url":"/burn/3d/racket/head/string_holes.obj",
+                            "shininess":50,
+                            "reflectivity":0.15,
+                            "color":"#121212",
+                            "specular":"#222222"
+                        },
+                        {
+                            "id":"head-trim",
+                            "url":"/burn/3d/racket/head/outer_trim.obj",
+                            "map":"/burn/3d/racket/head/outer-trim-color.jpg",
+                            "bumpMap":"/burn/3d/racket/head/outer-trim-bmp.jpg",
+                            "bumpScale":0.5,
+                            "color":"#ffffff",
+                            "specular":"#4A4A4A",
+                            "shininess":7,
+                            "reflectivity":0
+                        },
+                        {
+                            "id":"letter-w",
+                            "url":"/burn/3d/racket/handle/letter_w.obj",
+                            "color":"#FFFFFF",
+                            "specular":"#fbfbfb",
+                            "shininess":100,
+                            "reflectivity":0.2
+                        },
+                        {
+                            "id":"ring-0",
+                            "url":"/burn/3d/animations/handle/ring.obj",
+                            "swap":"basic",
+                            "color":"#FFFFFF",
+                            "specular":"#FFFFFF",
+                            "emissive":"#ffffff"
+                        },
+                        {
+                            "id":"ring-1",
+                            "url":"/burn/3d/animations/handle/ring.obj",
+                            "swap":"basic",
+                            "color":"#FFFFFF",
+                            "specular":"#FFFFFF",
+                            "emissive":"#ffffff"
+                        },
+                        {
+                            "id":"ring-2",
+                            "url":"/burn/3d/animations/handle/ring.obj",
+                            "swap":"basic",
+                            "color":"#FFFFFF",
+                            "specular":"#FFFFFF",
+                            "emissive":"#ffffff"
+                        },
+                        {
+                            "id":"ring-wide",
+                            "url":"/burn/3d/animations/handle/ring_wide.obj",
+                            "swap":"basic",
+                            "color":"#ebc428",
+                            "specular":"#ebc428",
+                            "emissive":"#ebc428"
+                        },
+                        {
+                            "id":"disc-outer",
+                            "url":"/burn/3d/animations/parallel-drilling/disc.obj",
+                            "swap":"basic",
+                            "color":"#f4ce21",
+                            "specular":"#f4ce21",
+                            "emissive":"#f4ce21"
+                        },
+                        {
+                            "id":"disc-middle",
+                            "url":"/burn/3d/animations/parallel-drilling/disc.obj",
+                            "swap":"basic",
+                            "color":"#f4ce21",
+                            "specular":"#f4ce21",
+                            "emissive":"#f4ce21"
+                        },
+                        {
+                            "id":"disc-inner",
+                            "url":"/burn/3d/animations/parallel-drilling/disc.obj",
+                            "swap":"basic",
+                            "color":"#ffffff",
+                            "specular":"#ffffff",
+                            "emissive":"#ffffff"
+                        },
+                        {
+                            "id":"disc-line-1",
+                            "url":"/burn/3d/animations/parallel-drilling/disc_line.obj",
+                            "swap":"basic",
+                            "color":"#ffffff",
+                            "specular":"#ffffff",
+                            "emissive":"#ffffff"
+                        },
+                        {
+                            "id":"disc-line-2",
+                            "url":"/burn/3d/animations/parallel-drilling/disc_line.obj",
+                            "swap":"basic",
+                            "color":"#ffffff",
+                            "specular":"#ffffff",
+                            "emissive":"#ffffff"
+                        },
+                        {
+                            "id":"disc-line-3",
+                            "url":"/burn/3d/animations/parallel-drilling/disc_line.obj",
+                            "swap":"basic",
+                            "color":"#ffffff",
+                            "specular":"#ffffff",
+                            "emissive":"#ffffff"
+                        },
+                        {
+                            "id":"tennis-ball",
+                            "url":"/burn/3d/animations/parallel-drilling/ball.obj",
+                            "color":"#cccccc",
+                            "map":"/burn/3d/animations/parallel-drilling/ball-color.jpg",
+                            "bumpMap":"/burn/3d/animations/parallel-drilling/ball-bmp.jpg",
+                            "bumpScale":0.3,
+                            "specular":"#000000",
+                            "shininess":1,
+                            "reflectivity":0
+                        },
+
+
+
+
+                        {
+                            "id":"stalk",
+                            "url":"/burn/3d/animations/spin-effect/stalk.obj",
+                            "swap":"basic",
+                            "color":"#f1f1f1",
+                            "specular":"#f1f1f1",
+                            "emissive":"#f1f1f1"
+                        },
+                        {
+                            "id":"helix",
+                            "url":"/burn/3d/animations/spin-effect/helix.obj",
+                            "swap":"basic",
+                            "color":"#f4ce21",
+                            "specular":"#f4ce21",
+                            "emissive":"#f4ce21"
+                        },
+
+
+                        {
+                            "id":"wireframe-long",
+                            "url":"/burn/3d/animations/carbon-fiber/long_wire.obj",
+                            "swap" : "basic",
+                            "color":"#841515",
+                            "emissive":"#841515"
+                        },
+                        {
+                            "id":"plate-short",
+                            "url":"/burn/3d/animations/carbon-fiber/short_plate.obj",
+                            "color":"#ff9d24",
+                            "shininess":150,
+                            "reflectivity":0.25
+
+                        }
+
+
+                    ]
+                }
+            ],
+            "hotspots":{
+                "strings" : [
+                    {
+                        "id":"spin-effect",
+                        "order" : 5,
+                        "index":567,
+                        "tracking" : {
+                            "ga-tag" : "spin effect"
+                            ,"ga-type" : "hotspot"
+                        },
+                        "transform":{
+                            "rotation":{
+                                "x":-1.33,
+                                "y":-0.17,
+                                "z":2.66
+                            },
+                            "translate":{
+                                "x":0,
+                                "y":0,
+                                "z":0
+                            },
+                            "fov":70
+                        },
+                        "content":{
+                            "id":"content-spin-effect",
+                            "standard" : {
+                                "right": 50,
+                                "top": 250
+                            }
+                        }
+                    }
+                ],
+                "head":[
+
+                    {
+                        "id":"parallel-drilling",
+                        "order" : 2,
+                        "index":386,
+                        "tracking" : {
+                            "ga-tag" : "parallel drilling"
+                            ,"ga-type" : "hotspot"
+                        },
+                        "transform":{
+                            "rotation":{
+                                "x":1.92,
+                                "y":0,
+                                "z":1.57
+                            },
+                            "translate":{
+                                "x":15,
+                                "y":0,
+                                "z":0
+                            },
+                            "fov":55
+                        },
+                        "content":{
+                            "id":"content-parallel-drilling",
+                            "standard" : {
+                                "center": -200,
+                                "top": 820
+                            },
+                            "small" : {
+                                "top": 750
+                            }
+                        }
+                    },
+
+                    {
+                        "id":"rounded-hoop",
+                        "order" : 1,
+                        "index":1104,
+                        "tracking" : {
+                            "ga-tag" : "rounded hoop"
+                            ,"ga-type" : "hotspot"
+                        },
+                        "transform":{
+                            "rotation":{
+                                "x":0.87,
+                                "y":-0.77,
+                                "z":-0.03
+                            },
+                            "translate":{
+                                "x":0,
+                                "y":2,
+                                "z":0
+                            },
+                            "fov":70
+                        },
+                        "content":{
+                            "id":"content-rounded-hoop",
+                            "standard" : {
+                                "left":50,
+                                "top":250
+                            }
+
+                        }
+                    },
+
+                    {
+                        "id":"carbon-fiber",
+                        "order" : 3,
+                        "index":1772,
+                        "tracking" : {
+                            "ga-tag" : "hp carbon"
+                            ,"ga-type" : "hotspot"
+                        },
+                        "transform":{
+                            "rotation":{
+                                "x":1.92,
+                                "y":0,
+                                "z":1.57
+                            },
+                            "translate":{
+                                "x":0,
+                                "y":0,
+                                "z":0
+                            },
+                            "fov":55
+                        },
+                        "content":{
+                            "id":"content-carbon-fiber",
+                            "standard" : {
+                                "right": 40,
+                                "top": 820
+                            },
+                            "small" : {
+                                "top": 750
+                            }
+                        }
+                    }
+                ],
+                "handle":[
+                    {
+                        "id":"x2-shaft",
+                        "order" : 4,
+                        "index":577,
+                        "tracking" : {
+                            "ga-tag" : "x2 shaft"
+                            ,"ga-type" : "hotspot"
+                        },
+                        "transform":{
+                            "rotation":{
+                                "x":-0.74,
+                                "y":0.95,
+                                "z":0.97
+                            },
+                            "translate":{
+                                "x":-12,
+                                "y":13,
+                                "z":0
+                            },
+                            "fov":62
+                        },
+                        "content":{
+                            "id":"content-x2-shaft",
+                            "standard" : {
+                                "right": 30,
+                                "top": 580
+                            }
+                        }
+                    }
+                ]
+            },
+            "environment":[
+                "/burn/images/3d/env/blur/pos-x.png",
+                "/burn/images/3d/env/blur/neg-x.png",
+                "/burn/images/3d/env/blur/pos-y.png",
+                "/burn/images/3d/env/blur/neg-y.png",
+                "/burn/images/3d/env/blur/pos-z.png",
+                "/burn/images/3d/env/blur/neg-z.png"
+            ]
+        }
+    }
+}
